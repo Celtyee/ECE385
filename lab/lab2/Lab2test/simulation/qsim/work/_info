@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab2/Lab2test/simulation/qsim
+vhard_block
+Z1 !s110 1632361702
+!i10b 1
+!s100 FJM]Ne^8jl;S[Eo@95nCb1
+I7_CQh=61T1dD7Z6H@P4[c2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1632361701
+Z4 8Lab2.vo
+Z5 FLab2.vo
+L0 1144
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1632361702.000000
+Z8 !s107 Lab2.vo|
+Z9 !s90 -work|work|Lab2.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vLab2
+R1
+!i10b 1
+!s100 EnBEbdKNX<@E36`HS_X<>2
+IZMQB0?FId1AD6JE]XP]dA0
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@lab2
+vLab2_vlg_vec_tst
+R1
+!i10b 1
+!s100 ?OVJOUeamSSN>WJn[Aio:1
+I81feMJ?=PBMG^7=WMG4:Z2
+R2
+R0
+w1632361699
+8Waveform2.vwf.vt
+FWaveform2.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform2.vwf.vt|
+!s90 -work|work|Waveform2.vwf.vt|
+!i113 1
+R10
+R11
+n@lab2_vlg_vec_tst
