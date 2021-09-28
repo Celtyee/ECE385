@@ -421,7 +421,7 @@ refer to the applicable agreement for further details.
 )
 (pin
 	(output)
-	(rect 504 816 680 832)
+	(rect 464 1000 640 1016)
 	(text "OUTPUT" (rect 1 0 51 13)(font "Arial" (font_size 6)))
 	(text "comparsion" (rect 90 0 167 15)(font "Arial" ))
 	(pt 0 8)
@@ -2237,21 +2237,6 @@ refer to the applicable agreement for further details.
 	(pt 992 744)
 )
 (connector
-	(text "s1" (rect 1080 832 1095 851)(font "Intel Clear" ))
-	(pt 1072 856)
-	(pt 1352 856)
-)
-(connector
-	(text "select" (rect 1032 592 1068 611)(font "Intel Clear" ))
-	(pt 1024 616)
-	(pt 1400 616)
-)
-(connector
-	(text "s0" (rect 1200 680 1215 699)(font "Intel Clear" ))
-	(pt 1192 704)
-	(pt 1312 704)
-)
-(connector
 	(pt 552 120)
 	(pt 592 120)
 )
@@ -2470,22 +2455,6 @@ refer to the applicable agreement for further details.
 	(pt 560 744)
 )
 (connector
-	(pt 488 744)
-	(pt 488 824)
-)
-(connector
-	(pt 488 824)
-	(pt 504 824)
-)
-(connector
-	(pt 464 744)
-	(pt 488 744)
-)
-(connector
-	(pt 488 744)
-	(pt 560 744)
-)
-(connector
 	(pt 976 280)
 	(pt 976 104)
 )
@@ -2581,7 +2550,6 @@ refer to the applicable agreement for further details.
 	(pt 640 800)
 )
 (connector
-	(text "<<__$DEF_ALIAS223>>" (rect 936 778 955 929)(font "Intel Clear" )(vertical)(invisible))
 	(pt 960 800)
 	(pt 960 784)
 )
@@ -2622,9 +2590,39 @@ refer to the applicable agreement for further details.
 	(pt 608 360)
 )
 (connector
-	(text "<<__$DEF_ALIAS249>>" (rect 930 776 1081 795)(font "Intel Clear" )(invisible))
 	(pt 960 784)
 	(pt 1016 784)
+)
+(connector
+	(pt 488 744)
+	(pt 488 1008)
+)
+(connector
+	(pt 488 1008)
+	(pt 464 1008)
+)
+(connector
+	(pt 464 744)
+	(pt 488 744)
+)
+(connector
+	(pt 488 744)
+	(pt 560 744)
+)
+(connector
+	(text "2-to-1 select S0" (rect 1032 592 1133 611)(font "Intel Clear" ))
+	(pt 1024 616)
+	(pt 1400 616)
+)
+(connector
+	(text "S1 of 3-to-1 mux" (rect 1200 688 1309 707)(font "Intel Clear" ))
+	(pt 1192 704)
+	(pt 1312 704)
+)
+(connector
+	(text "S2 of 3-to-1 mux" (rect 1080 832 1189 851)(font "Intel Clear" ))
+	(pt 1072 856)
+	(pt 1352 856)
 )
 (junction (pt 360 496))
 (junction (pt 360 400))
