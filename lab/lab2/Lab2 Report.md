@@ -1,6 +1,6 @@
 ## Lab2 Report
 
-Qian Liyang 3190110719
+Wei Jiahao 3190112144 ,Qian Liyang 3190110719
 
 ### Introduction
 
@@ -32,9 +32,9 @@ Qian Liyang 3190110719
 
    some NAND and NOR gates to build control unit. 
 
-2. block diagram (unfinished)
+2. block diagram 
 
-   connect the components mentioned above to implement a 2 bit, 4 words right-shift memory.
+   ![image-20210928203540229](Typora_graphs/image-20210928203540229.png)
 
 #### Control Unit
 
@@ -50,7 +50,22 @@ Qian Liyang 3190110719
 
 ### Design steps taken and detailed circuit schematic
 
-#### Design steps taken(unfinished)
+#### Design steps taken
+
+​	To avoid the conflict of the inputs, we make the following truth table to implement the logic gates. The select signal to 2:1 MUX is 1, i.e., the shift registers will load value from SBR, only when the input signals are 0101. Otherwise, the shift registers will maintain their value.
+
+| FETCH/STORE/LDSBR/COMPARE | select signal to 2:1 MUX |
+| ------------------------- | ------------------------ |
+| 0101                      | 1                        |
+| else                      | 0                        |
+
+​	The same reasoning applies to the construction of the logic gates for select signal to 3:1 MUX. The select signal to 3:1 MUX is 10 only when the inputs are 1001. The select signal is 01 only when the inputs are 001x. Otherwise, the select signal is 00, i.e., the SBR will maintain its value. 
+
+| FETCH/STORE/LDSBR/COMPARE | select signal to 3:1 MUX |
+| ------------------------- | ------------------------ |
+| else                      | 00 (maintain)            |
+| 1001                      | 10 (fetch)               |
+| 001x                      | 01 (load)                |
 
 
 
