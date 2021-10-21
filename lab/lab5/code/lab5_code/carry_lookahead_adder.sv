@@ -1,5 +1,6 @@
 module carry_lookahead_adder
 (
+	 input logic cin,
     input   logic[15:0]     A,
     input   logic[15:0]     B,
     output  logic[15:0]     Sum,
@@ -14,7 +15,7 @@ module carry_lookahead_adder
 	  logic [3:0] PG;
 	  logic [3:0] GG;
 	  logic [3:0] C;
-	  four_bit_CLA CLA4_0(.A(A[3:0]),.B(B[3:0]),.cin(0),.PG(PG[0]),.GG(GG[0]),.sum(Sum[3:0]));
+	  four_bit_CLA CLA4_0(.A(A[3:0]),.B(B[3:0]),.cin(cin),.PG(PG[0]),.GG(GG[0]),.sum(Sum[3:0]));
 	  four_bit_CLA CLA4_1(.A(A[7:4]),.B(B[7:4]),.cin(C[1]),.PG(PG[1]),.GG(GG[1]),.sum(Sum[7:4]));
 	  four_bit_CLA CLA4_2(.A(A[11:8]),.B(B[11:8]),.cin(C[2]),.PG(PG[2]),.GG(GG[2]),.sum(Sum[11:8]));
 	  four_bit_CLA CLA4_3(.A(A[15:12]),.B(B[15:12]),.cin(C[3]),.PG(PG[3]),.GG(GG[3]),.sum(Sum[15:12]));

@@ -55,7 +55,7 @@ module CLA_S
     assign BB = (B^{8{fn}});
     assign ex_A = {A[7],A};
     assign ex_B = {BB[7],BB};
-    carry_lookahead_adder adder(.A({complement_element,ex_A}),.B({complement_element,ex_B}),.Sum(Sum));
+    carry_lookahead_adder adder(.A({complement_element,ex_A}),.B({complement_element,ex_B}),.Sum(Sum),.cin(fn));
     assign S = Sum[8:0];
     
 endmodule

@@ -4,6 +4,7 @@ module carry_select_adder
     input   logic[15:0]     B,
     output  logic[15:0]     Sum,
     output  logic           CO
+	 
 );
 
     /* TODO
