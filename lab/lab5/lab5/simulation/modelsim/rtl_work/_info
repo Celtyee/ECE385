@@ -1,0 +1,312 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d//Mac/Home/Desktop/2020SP/ECE385/lab5/simulation/modelsim
+vcontrol
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1585146524
+!i10b 1
+!s100 Z0hSK[oC6lmajoLD:SU4I0
+ID0jl4@4ZG?49VT8UfhklM0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 Control_sv_unit
+S1
+R0
+w1585129390
+8//Mac/Home/Desktop/2020SP/ECE385/lab5/Control.sv
+F//Mac/Home/Desktop/2020SP/ECE385/lab5/Control.sv
+L0 1
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1585146523.000000
+!s107 //Mac/Home/Desktop/2020SP/ECE385/lab5/Control.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+//Mac/Home/Desktop/2020SP/ECE385/lab5|//Mac/Home/Desktop/2020SP/ECE385/lab5/Control.sv|
+!i113 1
+Z5 o-sv -work work
+Z6 !s92 -sv -work work +incdir+//Mac/Home/Desktop/2020SP/ECE385/lab5
+Z7 tCvgOpt 0
+vD_filp_flop
+R1
+R2
+!i10b 1
+!s100 3]SzX0A;<@ckIA9g<_V@Y2
+I>=5z;nM8fL4kQC7G1m[iW2
+R3
+!s105 flip_flop_sv_unit
+S1
+R0
+w1585040892
+8//Mac/Home/Desktop/2020SP/ECE385/lab5/flip_flop.sv
+F//Mac/Home/Desktop/2020SP/ECE385/lab5/flip_flop.sv
+L0 5
+R4
+r1
+!s85 0
+31
+Z8 !s108 1585146524.000000
+!s107 //Mac/Home/Desktop/2020SP/ECE385/lab5/flip_flop.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+//Mac/Home/Desktop/2020SP/ECE385/lab5|//Mac/Home/Desktop/2020SP/ECE385/lab5/flip_flop.sv|
+!i113 1
+R5
+R6
+R7
+n@d_filp_flop
+vfull_adder
+R1
+Z9 !s110 1585146522
+!i10b 1
+!s100 hhYWPl4YLTKHln`b:Ya1h2
+I54756iKjVjZikZZ2VQYek0
+R3
+Z10 !s105 ripple_adder_sv_unit
+S1
+R0
+Z11 w1585129276
+Z12 8//Mac/Home/Desktop/2020SP/ECE385/lab5/ripple_adder.sv
+Z13 F//Mac/Home/Desktop/2020SP/ECE385/lab5/ripple_adder.sv
+L0 50
+R4
+r1
+!s85 0
+31
+Z14 !s108 1585146522.000000
+Z15 !s107 //Mac/Home/Desktop/2020SP/ECE385/lab5/ripple_adder.sv|
+Z16 !s90 -reportprogress|300|-sv|-work|work|+incdir+//Mac/Home/Desktop/2020SP/ECE385/lab5|//Mac/Home/Desktop/2020SP/ECE385/lab5/ripple_adder.sv|
+!i113 1
+R5
+R6
+R7
+vHexDriver
+R1
+R9
+!i10b 1
+!s100 ^DddjRd7Wla]U<SlP;mT@0
+IaVM7jbdmTbOd<DH50KI[`2
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+Z17 w1581796284
+8//Mac/Home/Desktop/2020SP/ECE385/lab5/HexDriver.sv
+F//Mac/Home/Desktop/2020SP/ECE385/lab5/HexDriver.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R14
+!s107 //Mac/Home/Desktop/2020SP/ECE385/lab5/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+//Mac/Home/Desktop/2020SP/ECE385/lab5|//Mac/Home/Desktop/2020SP/ECE385/lab5/HexDriver.sv|
+!i113 1
+R5
+R6
+R7
+n@hex@driver
+vlab5_toplevel
+R1
+R2
+!i10b 1
+!s100 R[`X0on6]>@B4H[koG5_40
+Iz=fl<8UBnzTOBX56^4HMT2
+R3
+!s105 lab5_toplevel_sv_unit
+S1
+R0
+w1585129176
+8//Mac/Home/Desktop/2020SP/ECE385/lab5/lab5_toplevel.sv
+F//Mac/Home/Desktop/2020SP/ECE385/lab5/lab5_toplevel.sv
+L0 6
+R4
+r1
+!s85 0
+31
+R8
+!s107 //Mac/Home/Desktop/2020SP/ECE385/lab5/lab5_toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+//Mac/Home/Desktop/2020SP/ECE385/lab5|//Mac/Home/Desktop/2020SP/ECE385/lab5/lab5_toplevel.sv|
+!i113 1
+R5
+R6
+R7
+vreg_8
+R1
+R9
+!i10b 1
+!s100 7P1QBa7<Dh4g^REko1LFo2
+I72SaSeB1E<aQ5If1=h=@90
+R3
+!s105 Reg_8_sv_unit
+S1
+R0
+w1585036434
+8//Mac/Home/Desktop/2020SP/ECE385/lab5/Reg_8.sv
+F//Mac/Home/Desktop/2020SP/ECE385/lab5/Reg_8.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R14
+!s107 //Mac/Home/Desktop/2020SP/ECE385/lab5/Reg_8.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+//Mac/Home/Desktop/2020SP/ECE385/lab5|//Mac/Home/Desktop/2020SP/ECE385/lab5/Reg_8.sv|
+!i113 1
+R5
+R6
+R7
+vripple_adder
+R1
+R9
+!i10b 1
+!s100 MME;g7=eU`7fFR2;Jghh33
+IdPfl<:k8azKSEZiNLSOho3
+R3
+R10
+S1
+R0
+R11
+R12
+R13
+L0 1
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R5
+R6
+R7
+vsync
+R1
+Z18 !s110 1585146523
+!i10b 1
+!s100 2W5Vz0:F6ckE2`eJOTK5l1
+IL[eYUIEQ8N;95Zofl@W^00
+R3
+Z19 !s105 Synchronizers_sv_unit
+S1
+R0
+R17
+Z20 8//Mac/Home/Desktop/2020SP/ECE385/lab5/Synchronizers.sv
+Z21 F//Mac/Home/Desktop/2020SP/ECE385/lab5/Synchronizers.sv
+L0 4
+R4
+r1
+!s85 0
+31
+R14
+Z22 !s107 //Mac/Home/Desktop/2020SP/ECE385/lab5/Synchronizers.sv|
+Z23 !s90 -reportprogress|300|-sv|-work|work|+incdir+//Mac/Home/Desktop/2020SP/ECE385/lab5|//Mac/Home/Desktop/2020SP/ECE385/lab5/Synchronizers.sv|
+!i113 1
+R5
+R6
+R7
+vsync_r0
+R1
+R18
+!i10b 1
+!s100 IGd9f_F;JNjVBLQ@DAnD10
+I10^U^J>3XTj1U3@ef[GPC2
+R3
+R19
+S1
+R0
+R17
+R20
+R21
+L0 18
+R4
+r1
+!s85 0
+31
+R14
+R22
+R23
+!i113 1
+R5
+R6
+R7
+vsync_r1
+R1
+R18
+!i10b 1
+!s100 1CXiH1DYDbAUS69Ee2j060
+IR1kRZY_hO5XCQ`gBa^_F72
+R3
+R19
+S1
+R0
+R17
+R20
+R21
+L0 39
+R4
+r1
+!s85 0
+31
+R14
+R22
+R23
+!i113 1
+R5
+R6
+R7
+vtestbench
+R1
+R2
+!i10b 1
+!s100 Q]3^L0FTf15Z0O_g:2kA83
+IiRZLfdcGF7[_e5YKTdzTS2
+R3
+!s105 testbench_sv_unit
+S1
+R0
+w1584947675
+8/Desktop/2020SP/ECE385/lab5/testbench.sv
+F/Desktop/2020SP/ECE385/lab5/testbench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R8
+!s107 /Desktop/2020SP/ECE385/lab5/testbench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/Desktop/2020SP/ECE385/lab5|/Desktop/2020SP/ECE385/lab5/testbench.sv|
+!i113 1
+R5
+!s92 -sv -work work +incdir+/Desktop/2020SP/ECE385/lab5
+R7
+vthree_bit_ra
+R1
+R9
+!i10b 1
+!s100 84ZNE`Z[FjRmWhWTGUGN@3
+IQg0H;9IbO07EHGTb`Emjd3
+R3
+R10
+S1
+R0
+R11
+R12
+R13
+L0 32
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+R5
+R6
+R7

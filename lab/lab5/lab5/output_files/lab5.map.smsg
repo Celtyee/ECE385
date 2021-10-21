@@ -1,0 +1,2 @@
+Warning (10273): Verilog HDL warning at HexDriver.sv(23): extended using "x" or "z" File: //Mac/Home/Desktop/2020SP/ECE385/lab5/HexDriver.sv Line: 23
+Info (10281): Verilog HDL Declaration information at Control.sv(5): object "reset" differs only in case from object "Reset" in the same scope File: //Mac/Home/Desktop/2020SP/ECE385/lab5/Control.sv Line: 5

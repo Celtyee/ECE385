@@ -4,15 +4,21 @@ module lab5_toplevel
     input logic Clk, Reset, Run, ClearA_LoadB,
     output logic [6:0]AhexU, AhexL, BhexU, BhexL,
     output logic [7:0]Aval, Bval,
-    output logic X
+    output logic X,M,clr_ld,compute_sig,shift_sig,
+    output logic [8:0]adder_re
 );
     logic Clr_ld, shift_reg, Add_op, Sub_op,M_signal;
     logic compute;
     logic [8:0] adder_result;
-    logic [7:0] SR_A;
+    logic [7:0] SR_A,SR_B;
     assign compute = Add_op|Sub_op;
     assign Aval = SR_A;
-
+    assign Bval = SR_B;
+	assign M = M_signal;
+    assign adder_re = adder_result;
+    assign clr_ld = Clr_ld;
+    assign compute_sig = compute;
+    assign shift_sig = shift_reg;
     controller CONTROL(.Clk(Clk),.Reset(Reset),.ClearA_LoadB(ClearA_LoadB),.Run(Run),.M(M_signal),
                         .Clr_Ld(Clr_ld),.Shift(shift_reg),.Add(Add_op),.Sub(Sub_op));
 
@@ -22,39 +28,26 @@ module lab5_toplevel
                             .CA_result(adder_result),
                             .M(M_signal),
                             .X_sig(X),
-									 .A(SR_A),
-                            .B(Bval));
+							.A(SR_A),
+                            .B(SR_B));
     
     CLA_S nine_bit_Adder(.A(SR_A),.B(S),
                         .fn(Sub_op),
                         .S(adder_result));
 
-    HexDriver HexAL
-    (
-        .In0(Aval[3:0]),   // This connects the 4 least significant bits of 
-                        // register A to the input of a hex driver named Ahex0_inst
-        .Out0(AhexL)
-    );
-    HexDriver HexBL
-    (
-        .In0(Bval[3:0]),   // This connects the 4 least significant bits of 
-                        // register A to the input of a hex driver named Ahex0_inst
-        .Out0(BhexL)
-    );
-
-    HexDriver HexAU
-    (
-        .In0(Aval[7:4]),   // This connects the 4 least significant bits of 
-                        // register A to the input of a hex driver named Ahex0_inst
-        .Out0(AhexU)
-    );
-
-    HexDriver HexBU
-    (
-        .In0(Bval[7:4]),   // This connects the 4 least significant bits of 
-                        // register A to the input of a hex driver named Ahex0_inst
-        .Out0(BhexU)
-    );
-    
-    
+    HexDriver        HexAL (
+                        .In0(SR_A[3:0]),
+                        .Out0(AhexL) );
+	 HexDriver        HexBL (
+                        .In0(SR_B[3:0]),
+                        .Out0(BhexL) );
+								
+	 //When you extend to 8-bits, you will need more HEX drivers to view upper nibble of registers, for now set to 0
+	 HexDriver        HexAU (
+                        .In0(SR_A[7:4]),
+                        .Out0(AhexU) );	
+	 HexDriver        HexBU (
+                       .In0(SR_B[7:4]),
+                        .Out0(BhexU) );
+								
 endmodule
