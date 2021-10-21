@@ -49,13 +49,15 @@ module CLA_S
     output [8:0] S
 );
     logic [8:0] ex_A,ex_B;
-    logic [7:0] complement_element;
+    logic [6:0] complement_element;
+	 assign complement_element = 7'b0;
     logic [7:0] BB;
     logic [15:0] Sum;
     assign BB = (B^{8{fn}});
     assign ex_A = {A[7],A};
     assign ex_B = {BB[7],BB};
-    carry_lookahead_adder adder(.A({complement_element,ex_A}),.B({complement_element,ex_B}),.Sum(Sum),.cin(fn));
+	 ripple_adder adder(.A({complement_element,ex_A}),.B({complement_element,ex_B}),.Sum(Sum),.cin(fn));
+//    carry_lookahead_adder adder(.A({complement_element,ex_A}),.B({complement_element,ex_B}),.Sum(Sum),.cin(fn));
     assign S = Sum[8:0];
     
 endmodule
