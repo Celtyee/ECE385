@@ -14,12 +14,12 @@ logic [7:0] Aval, Bval;
 logic X;
 logic [6:0] AhexL, AhexU, BhexL, BhexU;
 
-// debug variable
-logic M,clr_ld,compute_sig,shift_sig;
-logic [8:0]adder_re;
 
 // To store expected results
 logic [7:0] ans_a, ans_b;
+
+//debug
+logic [8:0] adder_re;
 
 // A counter to count the instances where simulation results
 // do not match with expected results

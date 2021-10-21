@@ -1,34 +1,37 @@
 module sixteen_RS
 (
-    input logic Clk, Reset, Shift_En,Load_B, Compute,Clear_XA, Shift_IN,
+    input logic Clk, Reset, Shift_En,Load_B, Compute,Clear_XA,
     input logic [7:0] S,
-    input logic [7:0] CA_result,
+    input logic [8:0] CA_result,
     output logic M,
+    output logic X_sig,
     output logic [7:0] A,
     output logic [7:0] B
 );
-    logic [15:0] XAB;
+    logic [16:0] XAB;
     logic X;
     assign A = XAB[15:8];
     assign B = XAB[7:0];
     assign M = XAB[0];
+    assign X_sig = X;
+    flip_reg X_reg(.Clk(Clk), .Load(Compute),.Q(X),.D(CA_result[8]),.Reset(Reset));
     always_ff @( posedge Clk ) begin : shift_logic
         if(Reset)
             XAB <= 17'b0;
         else if(Load_B)
             XAB[7:0] <= S[7:0];
         else if(Compute)
-            XAB[15:8] <= CA_result;
+            XAB[15:8] <= CA_result[7:0];
         else if(Clear_XA)
-            XAB[15:8] <= 8'b0;
+            XAB[16:8] <= 9'b0;
         else if(Shift_En)
-            XAB[15:0] <= {Shift_IN,XAB[15:1]};
+            XAB <= {X, XAB[16:1]};
     end
 endmodule
 
 module flip_reg
 (
-    input logic Clk, Load, Reset, D,
+    input Clk, Load, Reset, D,
     output logic Q
 );
 always_ff @( posedge Clk ) begin : common_reg

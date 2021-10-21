@@ -56,14 +56,12 @@ module controller(
                 Add = 0;
                 Sub = 0;
                 if (Run) Clear_XA = 1;
-					 else Clear_XA = 0;
             end
             Ld: begin
                 Clr_Ld = 0;
                 Shift = 0;
                 Add = 0;
                 Sub = 0;
-					 Clear_XA = 0;
                 if (count == S7) Sub = M;
                 else Add = M;
             end
@@ -72,14 +70,12 @@ module controller(
                 Shift = 1;
                 Add = 0;
                 Sub = 0;
-					 Clear_XA = 0;
             end
             default: begin
                 Clr_Ld = 0;
                 Shift = 0;
                 Add = 0;
                 Sub = 0;
-					 Clear_XA = 0;
             end
         endcase
     end

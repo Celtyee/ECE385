@@ -1,1 +1,1 @@
-Info (10281): Verilog HDL Declaration information at lab5_toplevel0.sv(7): object "clr_ld" differs only in case from object "Clr_ld" in the same scope File: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel0.sv Line: 7
+Warning (10268): Verilog HDL information at lab5_shift_registers.sv(15): always construct contains both blocking and non-blocking assignments File: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv Line: 15

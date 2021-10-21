@@ -1,5 +1,5 @@
 Flow report for lab5
-Thu Oct 21 10:13:25 2021
+Thu Oct 21 15:02:43 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Oct 21 10:13:25 2021       ;
+; Flow Status                        ; Successful - Thu Oct 21 15:02:43 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab5                                        ;
 ; Top-level Entity Name              ; lab5_toplevel                               ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/21/2021 10:13:18 ;
+; Start date & time ; 10/21/2021 15:02:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lab5                ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+----------------------------------------+---------------+---------------+----------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name   ; Section Id     ;
 +--------------------------------------+----------------------------------------+---------------+---------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 5334165180932.163478239713008          ; --            ; --            ; --             ;
+; COMPILER_SIGNATURE_ID                ; 5334165180932.163479975509828          ; --            ; --            ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; testbench      ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                              ; --            ; --            ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Systemverilog Hdl                      ; --            ; --            ; eda_simulation ;
@@ -84,7 +84,7 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; lab5_code/testbench.sv                 ; --            ; --            ; testbench      ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; testbench                              ; --            ; --            ; testbench      ;
 ; EDA_TEST_BENCH_NAME                  ; testbench                              ; --            ; --            ; eda_simulation ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1000 ns                                ; --            ; --            ; testbench      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 5000 ns                                ; --            ; --            ; testbench      ;
 ; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --            ; eda_simulation ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --            ; --             ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --            ; --             ;

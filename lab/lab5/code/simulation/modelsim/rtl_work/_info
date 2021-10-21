@@ -10,7 +10,7 @@ cModel Technology
 Z0 dD:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/simulation/modelsim
 vcarry_lookahead_adder
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
-Z2 !s110 1634782424
+Z2 !s110 1634799791
 !i10b 1
 !s100 Z7nW:^MZQ9l6^::>g^PHk1
 IE;7ZCk:hdkI42MmBo1S[Y1
@@ -26,7 +26,7 @@ Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z9 !s108 1634782424.000000
+Z9 !s108 1634799791.000000
 Z10 !s107 D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv|
 Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code|D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv|
 !i113 1
@@ -37,16 +37,16 @@ vCLA_S
 R1
 R2
 !i10b 1
-!s100 jLCmDnn=aQX]XV2=z48zF2
-IP`cZX9z<X>zQ]8g0MFi1:1
+!s100 ]SH2SE<=8@X55`eifK]1P2
+IYFFTQ;X?c1fmXce8PGUzn2
 R3
 Z15 !s105 lab5_shift_registers_sv_unit
 S1
 R0
-Z16 w1634721549
+Z16 w1634799733
 Z17 8D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv
 Z18 FD:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv
-L0 46
+L0 45
 R8
 r1
 !s85 0
@@ -63,13 +63,13 @@ vcontroller
 R1
 R2
 !i10b 1
-!s100 jm^;IfXEIzmclej=`VAAG3
-I5c;`OT[41F3zzdnF_ZTM92
+!s100 5GKCK6E2jDTj=3Z]MADG93
+IRaRY6]i7`3FTDz<><1f<51
 R3
 !s105 lab5_controller_sv_unit
 S1
 R0
-w1634717564
+w1634784086
 8D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_controller.sv
 FD:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_controller.sv
 L0 1
@@ -88,8 +88,8 @@ vflip_reg
 R1
 R2
 !i10b 1
-!s100 ?_1[a[zi5izg3l?Vz^IcM2
-I]fXRhJ>`hj15QR4Jm]7=Y2
+!s100 HhY>ij7E^V9NTdVRJ``cI2
+Iahgb3D?HiRkb^5D75jX7H3
 R3
 R15
 S1
@@ -97,7 +97,7 @@ R0
 R16
 R17
 R18
-L0 30
+L0 29
 R8
 r1
 !s85 0
@@ -217,23 +217,23 @@ vlab5_toplevel
 R1
 R2
 !i10b 1
-!s100 ]2Rhj`7`bzBaBkMm;P6a>3
-IZhf0S96k=RP9Lh6R=XQS51
+!s100 aL1;fbSB3K5G89z<IFlBS2
+I]H]gQZIJQQ8N_?n4D<>aL1
 R3
-!s105 lab5_toplevel0_sv_unit
+!s105 lab5_toplevel_sv_unit
 S1
 R0
-w1634782380
-8D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel0.sv
-FD:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel0.sv
+w1634799753
+8D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel.sv
+FD:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel.sv
 L0 1
 R8
 r1
 !s85 0
 31
 R9
-!s107 D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel0.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code|D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel0.sv|
+!s107 D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code|D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel.sv|
 !i113 1
 R12
 R13
@@ -268,8 +268,8 @@ vsixteen_RS
 R1
 R2
 !i10b 1
-!s100 DI0eBh08Mo4^Wj>G4g_8J0
-Im>@:Ph=D9B9[lz@:R2T<e2
+!s100 na4aSMOU4mOPEh1<h]ODN0
+IFkoj>W0V8FJ`@bNEMAcJH3
 R3
 R15
 S1
@@ -290,17 +290,92 @@ R12
 R13
 R14
 nsixteen_@r@s
+vsync
+R1
+R2
+!i10b 1
+!s100 2W5Vz0:F6ckE2`eJOTK5l1
+Iim@F<Z8@^3@XCafzE5JHM0
+R3
+Z21 !s105 Synchronizers_sv_unit
+S1
+R0
+Z22 w1634783484
+Z23 8D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/Synchronizers.sv
+Z24 FD:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/Synchronizers.sv
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+Z25 !s107 D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/Synchronizers.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code|D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/Synchronizers.sv|
+!i113 1
+R12
+R13
+R14
+vsync_r0
+R1
+R2
+!i10b 1
+!s100 IGd9f_F;JNjVBLQ@DAnD10
+IOO61XmR@@E;3Mb0f6;9BP2
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 18
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14
+vsync_r1
+R1
+R2
+!i10b 1
+!s100 1CXiH1DYDbAUS69Ee2j060
+I>KGhX3VHgZo]2Z3fUcgK=0
+R3
+R21
+S1
+R0
+R22
+R23
+R24
+L0 39
+R8
+r1
+!s85 0
+31
+R9
+R25
+R26
+!i113 1
+R12
+R13
+R14
 vtestbench
 R1
-!s110 1634782425
+R2
 !i10b 1
-!s100 U4[2=?0Ekf^UOoDao?Y^[2
-I5hJO;;MXY8YI4^oF=ALU80
+!s100 Oh?U9dR@aFSN11cgBH>2I2
+IYfomNeWR96WJQczO<Tc^R3
 R3
 !s105 testbench_sv_unit
 S1
 R0
-w1634782394
+w1634798120
 8D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/testbench.sv
 FD:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/testbench.sv
 L0 1
@@ -308,7 +383,7 @@ R8
 r1
 !s85 0
 31
-!s108 1634782425.000000
+R9
 !s107 D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/testbench.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code|D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/testbench.sv|
 !i113 1

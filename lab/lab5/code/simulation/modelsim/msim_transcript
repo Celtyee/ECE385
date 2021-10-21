@@ -10,19 +10,23 @@
 # Copying D:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+D:/OneDrive\ -\ International\ Campus,\ Zhejiang\ University/University/ece/ECE385/lab/lab5/code/lab5_code {D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel0.sv}
+# vlog -sv -work work +incdir+D:/OneDrive\ -\ International\ Campus,\ Zhejiang\ University/University/ece/ECE385/lab/lab5/code/lab5_code {D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/Synchronizers.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:13:44 on Oct 21,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code" D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel0.sv 
-# -- Compiling module lab5_toplevel
+# Start time: 15:03:11 on Oct 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code" D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/Synchronizers.sv 
+# -- Compiling module sync
+# -- Compiling module sync_r0
+# -- Compiling module sync_r1
 # 
 # Top level modules:
-# 	lab5_toplevel
-# End time: 10:13:44 on Oct 21,2021, Elapsed time: 0:00:00
+# 	sync
+# 	sync_r0
+# 	sync_r1
+# End time: 15:03:11 on Oct 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/OneDrive\ -\ International\ Campus,\ Zhejiang\ University/University/ece/ECE385/lab/lab5/code/lab5_code {D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:13:44 on Oct 21,2021
+# Start time: 15:03:11 on Oct 21,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code" D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv 
 # -- Compiling module sixteen_RS
 # -- Compiling module flip_reg
@@ -30,32 +34,33 @@
 # 
 # Top level modules:
 # 	sixteen_RS
+# 	flip_reg
 # 	CLA_S
-# End time: 10:13:44 on Oct 21,2021, Elapsed time: 0:00:00
+# End time: 15:03:11 on Oct 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/OneDrive\ -\ International\ Campus,\ Zhejiang\ University/University/ece/ECE385/lab/lab5/code/lab5_code {D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_controller.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:13:44 on Oct 21,2021
+# Start time: 15:03:11 on Oct 21,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code" D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_controller.sv 
 # -- Compiling module controller
 # 
 # Top level modules:
 # 	controller
-# End time: 10:13:44 on Oct 21,2021, Elapsed time: 0:00:00
+# End time: 15:03:11 on Oct 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/OneDrive\ -\ International\ Campus,\ Zhejiang\ University/University/ece/ECE385/lab/lab5/code/lab5_code {D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/HexDriver.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:13:44 on Oct 21,2021
+# Start time: 15:03:11 on Oct 21,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code" D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/HexDriver.sv 
 # -- Compiling module HexDriver
 # 
 # Top level modules:
 # 	HexDriver
-# End time: 10:13:44 on Oct 21,2021, Elapsed time: 0:00:00
+# End time: 15:03:11 on Oct 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -sv -work work +incdir+D:/OneDrive\ -\ International\ Campus,\ Zhejiang\ University/University/ece/ECE385/lab/lab5/code/lab5_code {D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:13:44 on Oct 21,2021
+# Start time: 15:03:11 on Oct 21,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code" D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv 
 # -- Compiling module carry_lookahead_adder
 # -- Compiling module sixteen_bit_CLA_CLU
@@ -65,29 +70,39 @@
 # 
 # Top level modules:
 # 	carry_lookahead_adder
-# End time: 10:13:44 on Oct 21,2021, Elapsed time: 0:00:00
+# End time: 15:03:11 on Oct 21,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+D:/OneDrive\ -\ International\ Campus,\ Zhejiang\ University/University/ece/ECE385/lab/lab5/code/lab5_code {D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:03:11 on Oct 21,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code" D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_toplevel.sv 
+# -- Compiling module lab5_toplevel
+# 
+# Top level modules:
+# 	lab5_toplevel
+# End time: 15:03:11 on Oct 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -sv -work work +incdir+D:/OneDrive\ -\ International\ Campus,\ Zhejiang\ University/University/ece/ECE385/lab/lab5/code/lab5_code {D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/testbench.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:13:45 on Oct 21,2021
+# Start time: 15:03:11 on Oct 21,2021
 # vlog -reportprogress 300 -sv -work work "+incdir+D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code" D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/testbench.sv 
 # -- Compiling module testbench
 # 
 # Top level modules:
 # 	testbench
-# End time: 10:13:45 on Oct 21,2021, Elapsed time: 0:00:00
+# End time: 15:03:11 on Oct 21,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 10:13:45 on Oct 21,2021
+# Start time: 15:03:11 on Oct 21,2021
 # Loading sv_std.std
 # Loading work.testbench
 # Loading work.lab5_toplevel
+# Loading work.flip_reg
 # Loading work.controller
 # Loading work.sixteen_RS
-# Loading work.flip_reg
 # Loading work.CLA_S
 # Loading work.carry_lookahead_adder
 # Loading work.four_bit_CLA
@@ -95,13 +110,14 @@
 # Loading work.full_bit_CLA_CLU
 # Loading work.sixteen_bit_CLA_CLU
 # Loading work.HexDriver
-# ** Warning: (vsim-3017) D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv(59): [TFMPC] - Too few port connections. Expected 4, found 3.
+# Loading work.sync
+# ** Warning: (vsim-3017) D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv(58): [TFMPC] - Too few port connections. Expected 4, found 3.
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/lab5_toplevel0/nine_bit_Adder/adder File: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv
-# ** Warning: (vsim-3015) D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv(59): [PCDPC] - Port size (16) does not match connection size (17) for port 'A'. The port definition is at: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv(3).
+# ** Warning: (vsim-3015) D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv(58): [PCDPC] - Port size (16) does not match connection size (17) for port 'A'. The port definition is at: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv(3).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/lab5_toplevel0/nine_bit_Adder/adder File: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv
-# ** Warning: (vsim-3015) D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv(59): [PCDPC] - Port size (16) does not match connection size (17) for port 'B'. The port definition is at: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv(4).
+# ** Warning: (vsim-3015) D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv(58): [PCDPC] - Port size (16) does not match connection size (17) for port 'B'. The port definition is at: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv(4).
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/lab5_toplevel0/nine_bit_Adder/adder File: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv
-# ** Warning: (vsim-3722) D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv(59): [TFMPC] - Missing connection for port 'CO'.
+# ** Warning: (vsim-3722) D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/lab5_shift_registers.sv(58): [TFMPC] - Missing connection for port 'CO'.
 # ** Warning: (vsim-3017) D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv(17): [TFMPC] - Too few port connections. Expected 7, found 6.
 #    Time: 0 ps  Iteration: 0  Instance: /testbench/lab5_toplevel0/nine_bit_Adder/adder/CLA4_0 File: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv
 # ** Warning: (vsim-3015) D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv(17): [PCDPC] - Port size (1) does not match connection size (32) for port 'cin'. The port definition is at: D:/OneDrive - International Campus, Zhejiang University/University/ece/ECE385/lab/lab5/code/lab5_code/carry_lookahead_adder.sv(56).
@@ -128,6 +144,7 @@
 # .main_pane.structure.interior.cs.body.struct
 # view signals
 # .main_pane.objects.interior.cs.body.tree
-# run 1000 ns
-# End time: 10:19:16 on Oct 21,2021, Elapsed time: 0:05:31
+# run 5000 ns
+# Try again!
+# End time: 15:05:56 on Oct 21,2021, Elapsed time: 0:02:45
 # Errors: 0, Warnings: 17

@@ -7,10 +7,10 @@ S[4] => S[4].IN2
 S[5] => S[5].IN2
 S[6] => S[6].IN2
 S[7] => S[7].IN2
-Clk => Clk.IN2
-Reset => Reset.IN2
-Run => Run.IN1
-ClearA_LoadB => ClearA_LoadB.IN1
+Clk => Clk.IN3
+Reset => sync:button_sync[2].d
+Run => sync:button_sync[1].d
+ClearA_LoadB => sync:button_sync[0].d
 AhexU[0] <= HexDriver:HexAU.Out0
 AhexU[1] <= HexDriver:HexAU.Out0
 AhexU[2] <= HexDriver:HexAU.Out0
@@ -55,9 +55,7 @@ Bval[4] <= SR_B[4].DB_MAX_OUTPUT_PORT_TYPE
 Bval[5] <= SR_B[5].DB_MAX_OUTPUT_PORT_TYPE
 Bval[6] <= SR_B[6].DB_MAX_OUTPUT_PORT_TYPE
 Bval[7] <= SR_B[7].DB_MAX_OUTPUT_PORT_TYPE
-X <= sixteen_RS:sixteen_bit_SR.X_sig
-M <= M_signal.DB_MAX_OUTPUT_PORT_TYPE
-clr_ld <= Clr_ld.DB_MAX_OUTPUT_PORT_TYPE
+X <= shift_IN.DB_MAX_OUTPUT_PORT_TYPE
 adder_re[0] <= adder_result[0].DB_MAX_OUTPUT_PORT_TYPE
 adder_re[1] <= adder_result[1].DB_MAX_OUTPUT_PORT_TYPE
 adder_re[2] <= adder_result[2].DB_MAX_OUTPUT_PORT_TYPE
@@ -67,6 +65,14 @@ adder_re[5] <= adder_result[5].DB_MAX_OUTPUT_PORT_TYPE
 adder_re[6] <= adder_result[6].DB_MAX_OUTPUT_PORT_TYPE
 adder_re[7] <= adder_result[7].DB_MAX_OUTPUT_PORT_TYPE
 adder_re[8] <= adder_result[8].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab5_toplevel|flip_reg:X_reg
+Clk => Q~reg0.CLK
+Load => Q.OUTPUTSELECT
+Reset => Q.OUTPUTSELECT
+D => Q.DATAB
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab5_toplevel|controller:CONTROL
@@ -84,12 +90,12 @@ Reset => count.OUTPUTSELECT
 Reset => count.OUTPUTSELECT
 Reset => count.OUTPUTSELECT
 Reset => count.OUTPUTSELECT
-ClearA_LoadB => Clr_Ld.DATAA
+ClearA_LoadB => Clr_Ld.DATAB
 Run => next_state.OUTPUTSELECT
 Run => next_state.OUTPUTSELECT
 Run => next_state.OUTPUTSELECT
 Run => next_state.OUTPUTSELECT
-Run => Clr_Ld.OUTPUTSELECT
+Run => Clear_XA.DATAB
 Run => next_state.OUTPUTSELECT
 Run => next_state.OUTPUTSELECT
 Run => next_state.OUTPUTSELECT
@@ -100,12 +106,42 @@ Clr_Ld <= Clr_Ld.DB_MAX_OUTPUT_PORT_TYPE
 Shift <= Shift.DB_MAX_OUTPUT_PORT_TYPE
 Add <= Add.DB_MAX_OUTPUT_PORT_TYPE
 Sub <= Sub.DB_MAX_OUTPUT_PORT_TYPE
+Clear_XA <= Clear_XA.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |lab5_toplevel|sixteen_RS:sixteen_bit_SR
-Clk => Clk.IN1
-Reset => Reset.IN1
-Shift_En => XAB.OUTPUTSELECT
+Clk => XAB[0].CLK
+Clk => XAB[1].CLK
+Clk => XAB[2].CLK
+Clk => XAB[3].CLK
+Clk => XAB[4].CLK
+Clk => XAB[5].CLK
+Clk => XAB[6].CLK
+Clk => XAB[7].CLK
+Clk => XAB[8].CLK
+Clk => XAB[9].CLK
+Clk => XAB[10].CLK
+Clk => XAB[11].CLK
+Clk => XAB[12].CLK
+Clk => XAB[13].CLK
+Clk => XAB[14].CLK
+Clk => XAB[15].CLK
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
+Reset => XAB.OUTPUTSELECT
 Shift_En => XAB.OUTPUTSELECT
 Shift_En => XAB.OUTPUTSELECT
 Shift_En => XAB.OUTPUTSELECT
@@ -138,8 +174,39 @@ Load_B => XAB.OUTPUTSELECT
 Load_B => XAB.OUTPUTSELECT
 Load_B => XAB.OUTPUTSELECT
 Load_B => XAB.OUTPUTSELECT
-Load_B => XAB.OUTPUTSELECT
-Compute => Compute.IN1
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Compute => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Clear_XA => XAB.OUTPUTSELECT
+Shift_IN => XAB.DATAB
 S[0] => XAB.DATAB
 S[1] => XAB.DATAB
 S[2] => XAB.DATAB
@@ -156,9 +223,7 @@ CA_result[4] => XAB.DATAB
 CA_result[5] => XAB.DATAB
 CA_result[6] => XAB.DATAB
 CA_result[7] => XAB.DATAB
-CA_result[8] => CA_result[8].IN1
 M <= XAB[0].DB_MAX_OUTPUT_PORT_TYPE
-X_sig <= flip_reg:X_reg.Q
 A[0] <= XAB[8].DB_MAX_OUTPUT_PORT_TYPE
 A[1] <= XAB[9].DB_MAX_OUTPUT_PORT_TYPE
 A[2] <= XAB[10].DB_MAX_OUTPUT_PORT_TYPE
@@ -177,14 +242,6 @@ B[6] <= XAB[6].DB_MAX_OUTPUT_PORT_TYPE
 B[7] <= XAB[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|lab5_toplevel|sixteen_RS:sixteen_bit_SR|flip_reg:X_reg
-Clk => Q~reg0.CLK
-Load => Q.OUTPUTSELECT
-Reset => Q.OUTPUTSELECT
-D => Q.DATAB
-Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |lab5_toplevel|CLA_S:nine_bit_Adder
 A[0] => ex_A[0].IN1
 A[1] => ex_A[1].IN1
@@ -198,10 +255,14 @@ B[0] => BB.IN0
 B[1] => BB.IN0
 B[2] => BB.IN0
 B[3] => BB.IN0
-B[4] => ex_B[4].IN1
-B[5] => ex_B[5].IN1
-B[6] => ex_B[6].IN1
-B[7] => ex_B[7].IN2
+B[4] => BB.IN0
+B[5] => BB.IN0
+B[6] => BB.IN0
+B[7] => BB.IN0
+fn => BB.IN1
+fn => BB.IN1
+fn => BB.IN1
+fn => BB.IN1
 fn => BB.IN1
 fn => BB.IN1
 fn => BB.IN1
@@ -775,5 +836,23 @@ Out0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
 Out0[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
 Out0[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
 Out0[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab5_toplevel|sync:button_sync[0]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab5_toplevel|sync:button_sync[1]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab5_toplevel|sync:button_sync[2]
+Clk => q~reg0.CLK
+d => q~reg0.DATAIN
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
