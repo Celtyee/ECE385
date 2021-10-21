@@ -1,5 +1,5 @@
 Analysis & Synthesis report for lab4
-Sun Oct 17 20:05:07 2021
+Thu Oct 21 21:10:49 2021
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Oct 17 20:05:07 2021       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 21 21:10:49 2021       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; lab4                                        ;
 ; Top-level Entity Name              ; lab4_adders_toplevel                        ;
@@ -318,7 +318,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Sun Oct 17 20:04:58 2021
+    Info: Processing started: Thu Oct 21 21:10:39 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off lab4 -c lab4
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -358,9 +358,9 @@ Info (21057): Implemented 239 device resources after synthesis - the final resou
     Info (21059): Implemented 73 output pins
     Info (21061): Implemented 146 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Sun Oct 17 20:05:07 2021
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Thu Oct 21 21:10:49 2021
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:20
 
 
