@@ -75,7 +75,42 @@ assign MIO_EN = ~OE;
 
 // You need to make your own datapath module and connect everything to the datapath
 // Be careful about whether Reset is active high or low
-datapath d0 (/* Please fill in the signals.... */);
+datapath d0 (
+    .Clk,
+    .Reset_ah,
+
+    .LD_MAR,
+    .LD_MDR,
+    .LD_IR,
+    .LD_BEN,
+    .LD_CC,
+    .LD_REG,
+    .LD_PC,
+    .LD_LED, // for PAUSE instruction
+    
+    .GatePC,
+    .GateMDR,
+    .GateALU,
+    .GateMARMUX,
+    
+    .PCMUX,
+    .DRMUX,
+    .SR1MUX,
+    .SR2MUX,
+    .ADDR1MUX,
+    .ADDR2MUX,
+
+    .ALUK,
+    .MIO_EN,
+
+    .Data_to_CPU(MDR_In),
+    .Data_from_CPU(MDR),
+    .IR_11_9_in(IR[11:9]),
+
+    .MAR,
+    .IR_15_12(IR[15:12]),
+    .IR_11_9_out(IR[11:9])
+);
     
 // Our SRAM and I/O controller
 Mem2IO memory_subsystem(
