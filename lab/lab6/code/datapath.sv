@@ -37,19 +37,19 @@ module datapath (
     logic [15:0] GatePC_result, GateMARMUX_result, GateALU_result, GateMDR_result, pc_add_1_result;
     logic [15:0] dataBus_output;
 
-    MAR_Unit MAR0(
+    MAR_Unit MAR_reg(
         .Clk, .Reset(Reset_ah), 
         .LD_MAR, 
         .ADDR_In(dataBus_output), .ADDR_Out(MAR)
     );
 
-    MDR_Unit MDR0(
+    MDR_Unit MDR_reg(
         .Clk, .Reset(Reset_ah), 
         .LD_MDR, .MIO_EN, 
         .Data_to_CPU, .Data_from_Bus(dataBus_output), .Data_from_CPU(MDR)
     );
     
-    PCU PCU0(
+    PCU PC(
         .Clk, .Reset_ah, 
         .pc_add_1(pc_add_1_result),
         
@@ -60,11 +60,9 @@ module datapath (
         .pc_add_1_result(pc_add_1_result)
     );
     
-    IRA IRA0(
-        .Clk, .Reset_ah, 
-        .LD_IR, .ADDR1MUX, .ADDR2MUX,
-        .PC(GatePC_result), 
-        .datapath_input(dataBus_output),
+    IR  IR_reg(
+        .Clk, .Reset_ah, .LD_IR,
+        .dataBus_output(dataBus_output),
         .IR
     );
 
