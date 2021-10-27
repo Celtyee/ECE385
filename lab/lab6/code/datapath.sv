@@ -46,13 +46,13 @@ module datapath (
     MDR_Unit MDR_reg(
         .Clk, .Reset(Reset_ah), 
         .LD_MDR, .MIO_EN, 
-        .Data_to_CPU, .Data_from_Bus(dataBus_output), .Data_from_CPU(MDR)
+        .Data_to_CPU, .Data_from_Bus(dataBus_output), .Data_from_CPU(GateMDR_result)
     );
     
     PCU PC(
         .Clk, .Reset_ah, 
+        .adder_output(),
         .pc_add_1(pc_add_1_result),
-        
         .dataBus_input(dataBus_output),
         .PCMUX,
         .LD_PC,

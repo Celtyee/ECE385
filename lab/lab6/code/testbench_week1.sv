@@ -43,7 +43,7 @@ timeprecision 1ns;
    // data_out is the the variable name of output for each register instantiation	
 	always begin
 	#1
-	PC = test.my_slc.d0.PC;
+	PC = test.my_slc.d0.GatePC_result;
 	MAR = test.my_slc.d0.MAR_reg.ADDR_Out;
 	MDR = test.my_slc.d0.MDR_reg.Data_from_CPU;
 	IR = test.my_slc.d0.IR_reg.IR;	

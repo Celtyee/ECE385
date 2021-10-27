@@ -1,4 +1,4 @@
-# Reading D:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# Reading C:/intelFPGA_lite/18.1/modelsim_ase/tcl/vsim/pref.tcl
 # do SV_env_run_msim_rtl_verilog.do
 # if {[file exists rtl_work]} {
 # 	vdel -lib rtl_work -all
@@ -7,159 +7,159 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
-# Copying D:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Copying C:/intelFPGA_lite/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/tristate.sv}
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/MAR_MDR.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:19 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/tristate.sv 
-# -- Compiling module tristate
-# 
-# Top level modules:
-# 	tristate
-# End time: 21:11:19 on Oct 27,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/test_memory.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:19 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/test_memory.sv 
-# -- Compiling module test_memory
-# 
-# Top level modules:
-# 	test_memory
-# End time: 21:11:19 on Oct 27,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/SLC3_2.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:19 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/SLC3_2.sv 
-# -- Compiling package SLC3_2
-# 
-# Top level modules:
-# 	--none--
-# End time: 21:11:19 on Oct 27,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/PCU.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:19 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/PCU.sv 
-# -- Compiling module PCU
-# 
-# Top level modules:
-# 	PCU
-# End time: 21:11:19 on Oct 27,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/Mem2IO.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:19 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/Mem2IO.sv 
-# -- Compiling module Mem2IO
-# 
-# Top level modules:
-# 	Mem2IO
-# End time: 21:11:19 on Oct 27,2021, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/MAR&MDR.sv}
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:20 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/MAR&MDR.sv 
+# Start time: 22:33:41 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/MAR_MDR.sv 
 # -- Compiling module MAR_Unit
 # -- Compiling module MDR_Unit
 # 
 # Top level modules:
 # 	MAR_Unit
 # 	MDR_Unit
-# End time: 21:11:20 on Oct 27,2021, Elapsed time: 0:00:00
+# End time: 22:33:41 on Oct 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/ISDU.sv}
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/tristate.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:20 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/ISDU.sv 
+# Start time: 22:33:41 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/tristate.sv 
+# -- Compiling module tristate
+# 
+# Top level modules:
+# 	tristate
+# End time: 22:33:41 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/test_memory.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:33:41 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/test_memory.sv 
+# -- Compiling module test_memory
+# 
+# Top level modules:
+# 	test_memory
+# End time: 22:33:41 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/SLC3_2.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:33:42 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/SLC3_2.sv 
+# -- Compiling package SLC3_2
+# 
+# Top level modules:
+# 	--none--
+# End time: 22:33:42 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/PCU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:33:42 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/PCU.sv 
+# -- Compiling module PCU
+# 
+# Top level modules:
+# 	PCU
+# End time: 22:33:42 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/Mem2IO.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:33:42 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/Mem2IO.sv 
+# -- Compiling module Mem2IO
+# 
+# Top level modules:
+# 	Mem2IO
+# End time: 22:33:42 on Oct 27,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/ISDU.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:33:42 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/ISDU.sv 
 # -- Compiling module ISDU
 # 
 # Top level modules:
 # 	ISDU
-# End time: 21:11:20 on Oct 27,2021, Elapsed time: 0:00:00
+# End time: 22:33:42 on Oct 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/IRA.sv}
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/IRA.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:20 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/IRA.sv 
-# -- Compiling module IRA
+# Start time: 22:33:42 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/IRA.sv 
+# -- Compiling module IR
 # 
 # Top level modules:
-# 	IRA
-# End time: 21:11:20 on Oct 27,2021, Elapsed time: 0:00:00
+# 	IR
+# End time: 22:33:42 on Oct 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/HexDriver.sv}
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/HexDriver.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:20 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/HexDriver.sv 
+# Start time: 22:33:42 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/HexDriver.sv 
 # -- Compiling module HexDriver
 # 
 # Top level modules:
 # 	HexDriver
-# End time: 21:11:20 on Oct 27,2021, Elapsed time: 0:00:00
+# End time: 22:33:42 on Oct 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/memory_contents.sv}
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/memory_contents.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:20 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/memory_contents.sv 
+# Start time: 22:33:42 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/memory_contents.sv 
 # -- Compiling package memory_contents_sv_unit
 # -- Importing package SLC3_2
 # -- Compiling module memory_parser
 # 
 # Top level modules:
 # 	memory_parser
-# End time: 21:11:20 on Oct 27,2021, Elapsed time: 0:00:00
+# End time: 22:33:42 on Oct 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/datapath.sv}
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/datapath.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:20 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/datapath.sv 
+# Start time: 22:33:43 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/datapath.sv 
 # -- Compiling module datapath
 # -- Compiling module Data_BUS
 # 
 # Top level modules:
 # 	datapath
-# End time: 21:11:20 on Oct 27,2021, Elapsed time: 0:00:00
+# End time: 22:33:43 on Oct 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/slc3.sv}
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/slc3.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:20 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/slc3.sv 
+# Start time: 22:33:43 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/slc3.sv 
 # -- Compiling module slc3
 # 
 # Top level modules:
 # 	slc3
-# End time: 21:11:20 on Oct 27,2021, Elapsed time: 0:00:00
+# End time: 22:33:43 on Oct 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code {D:/GitProject/ECE385/lab/lab6/code/lab6_toplevel.sv}
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/lab6_toplevel.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:20 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/lab/lab6/code" D:/GitProject/ECE385/lab/lab6/code/lab6_toplevel.sv 
+# Start time: 22:33:43 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/lab6_toplevel.sv 
 # -- Compiling module lab6_toplevel
 # 
 # Top level modules:
 # 	lab6_toplevel
-# End time: 21:11:20 on Oct 27,2021, Elapsed time: 0:00:00
+# End time: 22:33:43 on Oct 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -sv -work work +incdir+D:/GitProject/ECE385/Quartus_env/../lab/lab6/code {D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv}
+# vlog -sv -work work +incdir+C:/Users/Corvus/Downloads/ECE385/Quartus_env/../lab/lab6/code {C:/Users/Corvus/Downloads/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 21:11:20 on Oct 27,2021
-# vlog -reportprogress 300 -sv -work work "+incdir+D:/GitProject/ECE385/Quartus_env/../lab/lab6/code" D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv 
+# Start time: 22:33:43 on Oct 27,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Users/Corvus/Downloads/ECE385/Quartus_env/../lab/lab6/code" C:/Users/Corvus/Downloads/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv 
 # -- Compiling module testbench_week1
 # 
 # Top level modules:
 # 	testbench_week1
-# End time: 21:11:20 on Oct 27,2021, Elapsed time: 0:00:00
+# End time: 22:33:43 on Oct 27,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench_week1
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench_week1 
-# Start time: 21:11:21 on Oct 27,2021
+# Start time: 22:33:43 on Oct 27,2021
 # Loading sv_std.std
 # Loading work.testbench_week1
 # Loading work.lab6_toplevel
@@ -169,7 +169,7 @@
 # Loading work.MAR_Unit
 # Loading work.MDR_Unit
 # Loading work.PCU
-# Loading work.IRA
+# Loading work.IR
 # Loading work.Data_BUS
 # Loading work.Mem2IO
 # Loading work.tristate
@@ -178,37 +178,14 @@
 # Loading work.SLC3_2
 # Loading work.memory_contents_sv_unit
 # Loading work.memory_parser
-# ** Warning: (vsim-3008) D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv(49): [CNNODP] - Component name (IR_reg) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1 File: D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
-# ** Error: (vsim-3043) D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv(49): Unresolved reference to 'IR_reg' in test.my_slc.d0.IR_reg.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1 File: D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
-# ** Warning: (vsim-3008) D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv(47): [CNNODP] - Component name (MAR_reg) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1 File: D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
-# ** Error: (vsim-3043) D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv(47): Unresolved reference to 'MAR_reg' in test.my_slc.d0.MAR_reg.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1 File: D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
-# ** Warning: (vsim-3008) D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv(48): [CNNODP] - Component name (MDR_reg) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1 File: D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
-# ** Error: (vsim-3043) D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv(48): Unresolved reference to 'MDR_reg' in test.my_slc.d0.MDR_reg.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1 File: D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
-# ** Warning: (vsim-3008) D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv(46): [CNNODP] - Component name (PC) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1 File: D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
-# ** Error: (vsim-3043) D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv(46): Unresolved reference to 'PC' in test.my_slc.d0.PC.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1 File: D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
-# ** Warning: (vsim-3015) D:/GitProject/ECE385/lab/lab6/code/datapath.sv(40): [PCDPC] - Port size (20) does not match connection size (16) for port 'ADDR_Out'. The port definition is at: D:/GitProject/ECE385/lab/lab6/code/MAR&MDR.sv(5).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1/test/my_slc/d0/MAR0 File: D:/GitProject/ECE385/lab/lab6/code/MAR&MDR.sv
-# ** Warning: (vsim-3015) D:/GitProject/ECE385/lab/lab6/code/datapath.sv(46): [PCDPC] - Port size (16) does not match connection size (1) for port 'Data_from_CPU'. The port definition is at: D:/GitProject/ECE385/lab/lab6/code/MAR&MDR.sv(21).
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1/test/my_slc/d0/MDR0 File: D:/GitProject/ECE385/lab/lab6/code/MAR&MDR.sv
-# ** Warning: (vsim-3017) D:/GitProject/ECE385/lab/lab6/code/datapath.sv(52): [TFMPC] - Too few port connections. Expected 9, found 8.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1/test/my_slc/d0/PCU0 File: D:/GitProject/ECE385/lab/lab6/code/PCU.sv
-# ** Warning: (vsim-3722) D:/GitProject/ECE385/lab/lab6/code/datapath.sv(52): [TFMPC] - Missing connection for port 'adder_output'.
-# ** Warning: (vsim-3017) D:/GitProject/ECE385/lab/lab6/code/datapath.sv(63): [TFMPC] - Too few port connections. Expected 11, found 8.
-#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1/test/my_slc/d0/IRA0 File: D:/GitProject/ECE385/lab/lab6/code/IRA.sv
-# ** Warning: (vsim-3722) D:/GitProject/ECE385/lab/lab6/code/datapath.sv(63): [TFMPC] - Missing connection for port 'SR1_out'.
-# ** Warning: (vsim-3722) D:/GitProject/ECE385/lab/lab6/code/datapath.sv(63): [TFMPC] - Missing connection for port 'GateMARMUX'.
-# ** Warning: (vsim-3722) D:/GitProject/ECE385/lab/lab6/code/datapath.sv(63): [TFMPC] - Missing connection for port 'SEXT_IR'.
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./SV_env_run_msim_rtl_verilog.do PAUSED at line 24
-# End time: 21:13:08 on Oct 27,2021, Elapsed time: 0:01:47
-# Errors: 4, Warnings: 12
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 5 us
+# ** Warning: (vsim-8315) C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/PCU.sv(23): No condition is true in the unique/priority if/case statement.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench_week1/test/my_slc/d0/PC
+# End time: 22:35:42 on Oct 27,2021, Elapsed time: 0:01:59
+# Errors: 0, Warnings: 1

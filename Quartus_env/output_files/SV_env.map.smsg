@@ -1,1 +1,1 @@
-Warning (10268): Verilog HDL information at ALU.sv(34): always construct contains both blocking and non-blocking assignments File: D:/GitProject/ECE385/lab/lab6/code/ALU.sv Line: 34
+Warning (10268): Verilog HDL information at ALU.sv(34): always construct contains both blocking and non-blocking assignments File: C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/ALU.sv Line: 34
