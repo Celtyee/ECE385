@@ -99,14 +99,11 @@ datapath d0 (
     .SR2MUX,
     .ADDR1MUX,
     .ADDR2MUX,
-
     .ALUK,
-    .MIO_EN,
 
+    .MIO_EN,
     .Data_to_CPU(MDR_In),
     .Data_from_CPU(MDR),
-    .IR_11_9_in(IR[11:9]),
-
     .MAR,
     .IR(IR)
 );
