@@ -2,7 +2,7 @@ module MAR_Unit(
     input logic Clk,
     input logic Reset, LD_MAR,
     input logic [15:0] ADDR_In,
-    output logic [19:0] ADDR_Out
+    output logic [15:0] ADDR_Out
 );
     logic [15:0] Val;
     always_ff @( Clk ) begin

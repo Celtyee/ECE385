@@ -51,8 +51,8 @@ module datapath (
     
     PCU PC(
         .Clk, .Reset_ah, 
+        .adder_output(),
         .pc_add_1(pc_add_1_result),
-        
         .dataBus_input(dataBus_output),
         .PCMUX,
         .LD_PC,
