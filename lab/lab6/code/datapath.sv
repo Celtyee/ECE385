@@ -33,15 +33,15 @@ module datapath (
     input logic [15:0]  Data_to_CPU,
     output logic [15:0] Data_from_CPU,
     output logic [15:0] MAR,
-    output logic [3:0]  IR_15_12,
-    output logic [2:0]  IR_11_9_out
+    output logic [15:0] IR
     
 );    
 
-    logic [15:0] GatePC_result, GateMARMUX_result, GateALU_result, GateMDR_result;
+    logic [15:0] GatePC_result, GateMARMUX_result, GateALU_result, GateMDR_result,pc_add_1_result;
 
     MAR_Unit MAR0(.Clk, .Reset(Reset_ah), .LD_MAR, .ADDR_In(), .ADDR_Out(MAR));
     MDR_Unit MDR0(.Clk, .Reset(Reset_ah), .LD_MDR, .MIO_EN, .Data_to_CPU, .Data_from_Bus(), .Data_from_CPU);
+    PCU PCU0(.Clk, .Reset_ah, .PC(GatePC_result),.pc_add_1_result(pc_add_1_result),.pc_add_1(pc_add_1_result),.PCMUX,.LD_PC);
     
 endmodule
 

@@ -108,8 +108,7 @@ datapath d0 (
     .IR_11_9_in(IR[11:9]),
 
     .MAR,
-    .IR_15_12(IR[15:12]),
-    .IR_11_9_out(IR[11:9])
+    .IR(IR)
 );
     
 // Our SRAM and I/O controller
