@@ -5,7 +5,7 @@ module MAR_Unit(
     output logic [15:0] ADDR_Out
 );
     logic [15:0] MAR_Val;
-    always_ff @( Clk ) begin
+    always_ff @(posedge Clk ) begin
         if (Reset) MAR_Val <= 16'h0000;
         else if (LD_MAR) MAR_Val <= ADDR_In;
         else MAR_Val <= MAR_Val;
@@ -21,7 +21,7 @@ module MDR_Unit(
     output logic [15:0] Data_from_CPU
 );
     logic [15:0] MUX_Out, MDR_Val;
-    always_ff @( Clk ) begin
+    always_ff @(posedge Clk ) begin
         if (Reset) MDR_Val <= 16'h0000;
         else if (LD_MDR) MDR_Val <= MUX_Out;
         else MDR_Val <= MDR_Val;

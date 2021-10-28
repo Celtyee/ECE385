@@ -105,7 +105,9 @@ datapath d0 (
     .Data_to_CPU(MDR_In),
     .Data_from_CPU(MDR),
     .MAR,
-    .IR(IR)
+
+    .IR(IR),
+    .PC(PC)
 );
     
 // Our SRAM and I/O controller

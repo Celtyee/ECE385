@@ -30,13 +30,16 @@ module datapath (
     output logic [15:0] MAR,
 
     // Instruction register
-    output logic [15:0] IR
+    output logic [15:0] IR,
+    output logic [15:0] PC
     
 );    
 
     logic [15:0] GatePC_result, GateMARMUX_result, GateALU_result, GateMDR_result, pc_add_1_result;
     logic [15:0] dataBus_output;
 
+    assign PC = GatePC_result;
+    
     MAR_Unit MAR_reg(
         .Clk, .Reset(Reset_ah), 
         .LD_MAR, 
@@ -49,7 +52,7 @@ module datapath (
         .Data_to_CPU, .Data_from_Bus(dataBus_output), .Data_from_CPU(GateMDR_result)
     );
     
-    PCU PC(
+    PCU PC_reg(
         .Clk, .Reset_ah, 
         .adder_output(),
         .pc_add_1(pc_add_1_result),

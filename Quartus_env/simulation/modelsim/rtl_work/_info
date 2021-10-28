@@ -10,25 +10,45 @@ cModel Technology
 Z0 dD:/GitProject/ECE385/Quartus_env/simulation/modelsim
 vData_BUS
 Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+<<<<<<< HEAD
 Z2 !s110 1635384708
 !i10b 1
 !s100 `mn`^]>B_]h2P2:Y@;biX1
 ICZT>GUH]?Dg5X<OlJdAaC2
+=======
+Z2 !s110 1635388178
+!i10b 1
+!s100 <eLR0^HF=A]5Ul20:z9NU0
+IB8izbID_;eSmIamjJi?`^3
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 Z4 !s105 datapath_sv_unit
 S1
 R0
+<<<<<<< HEAD
 Z5 w1635345943
 Z6 8D:/GitProject/ECE385/lab/lab6/code/datapath.sv
 Z7 FD:/GitProject/ECE385/lab/lab6/code/datapath.sv
 L0 87
+=======
+Z5 w1635388107
+Z6 8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/datapath.sv
+Z7 FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/datapath.sv
+L0 90
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 Z8 OV;L;10.5b;63
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z9 !s108 1635384708.000000
 Z10 !s107 D:/GitProject/ECE385/lab/lab6/code/datapath.sv|
 Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/datapath.sv|
+=======
+Z9 !s108 1635388178.000000
+Z10 !s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/datapath.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/datapath.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 Z12 o-sv -work work
 Z13 !s92 -sv -work work +incdir+D:/GitProject/ECE385/lab/lab6/code
@@ -38,8 +58,13 @@ vdatapath
 R1
 R2
 !i10b 1
+<<<<<<< HEAD
 !s100 SK2>oVbTL`z_;KZ516H?=2
 I^fJ^QWo^M2V?Kb`kd?b6Q2
+=======
+!s100 e8ea6oXVVhKXi9i=R1Sjg2
+IICUYT:nhgGPc^VYHd^B1T2
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 R3
 R4
 S1
@@ -69,17 +94,28 @@ R3
 !s105 HexDriver_sv_unit
 S1
 R0
+<<<<<<< HEAD
 w1635236971
 8D:/GitProject/ECE385/lab/lab6/code/HexDriver.sv
 FD:/GitProject/ECE385/lab/lab6/code/HexDriver.sv
+=======
+Z15 w1635340487
+8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/HexDriver.sv
+FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/HexDriver.sv
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 L0 1
 R8
 r1
 !s85 0
 31
 R9
+<<<<<<< HEAD
 !s107 D:/GitProject/ECE385/lab/lab6/code/HexDriver.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/HexDriver.sv|
+=======
+!s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/HexDriver.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
@@ -104,8 +140,13 @@ r1
 !s85 0
 31
 R9
+<<<<<<< HEAD
 !s107 D:/GitProject/ECE385/lab/lab6/code/IRA.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/IRA.sv|
+=======
+!s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/IRA.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/IRA.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
@@ -121,17 +162,29 @@ R3
 !s105 ISDU_sv_unit
 S1
 R0
+<<<<<<< HEAD
 w1635252276
 8D:/GitProject/ECE385/lab/lab6/code/ISDU.sv
 FD:/GitProject/ECE385/lab/lab6/code/ISDU.sv
 Z15 L0 19
+=======
+w1635343610
+8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/ISDU.sv
+FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/ISDU.sv
+Z16 L0 19
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 R8
 r1
 !s85 0
 31
 R9
+<<<<<<< HEAD
 !s107 D:/GitProject/ECE385/lab/lab6/code/ISDU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/ISDU.sv|
+=======
+!s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/ISDU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/ISDU.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
@@ -139,7 +192,7 @@ R14
 n@i@s@d@u
 vlab6_toplevel
 R1
-R2
+Z17 !s110 1635388179
 !i10b 1
 !s100 k;XFYEj__@<f`n61h0?<B3
 Ik_jK28SPQ=NRmX=^ahQ3X0
@@ -147,10 +200,17 @@ R3
 !s105 lab6_toplevel_sv_unit
 S1
 R0
+<<<<<<< HEAD
 Z16 w1635175262
 8D:/GitProject/ECE385/lab/lab6/code/lab6_toplevel.sv
 FD:/GitProject/ECE385/lab/lab6/code/lab6_toplevel.sv
 Z17 L0 10
+=======
+R15
+8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/lab6_toplevel.sv
+FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/lab6_toplevel.sv
+Z18 L0 10
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 R8
 r1
 !s85 0
@@ -164,6 +224,7 @@ R13
 R14
 vMAR_Unit
 R1
+<<<<<<< HEAD
 Z18 !s110 1635384707
 !i10b 1
 !s100 9T[l1UADQ2SncXfefHI6a1
@@ -175,14 +236,33 @@ R0
 R5
 Z20 8D:/GitProject/ECE385/lab/lab6/code/MAR_MDR.sv
 Z21 FD:/GitProject/ECE385/lab/lab6/code/MAR_MDR.sv
+=======
+Z19 !s110 1635388177
+!i10b 1
+!s100 BVi5ngZ=3mWdG_MVD7>Bd2
+I1@zi<L=0NS@IEhWFT4bVa1
+R3
+Z20 !s105 MAR_MDR_sv_unit
+S1
+R0
+Z21 w1635382235
+Z22 8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/MAR_MDR.sv
+Z23 FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/MAR_MDR.sv
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 L0 1
 R8
 r1
 !s85 0
 31
+<<<<<<< HEAD
 Z22 !s108 1635384707.000000
 Z23 !s107 D:/GitProject/ECE385/lab/lab6/code/MAR_MDR.sv|
 Z24 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/MAR_MDR.sv|
+=======
+Z24 !s108 1635388177.000000
+Z25 !s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/MAR_MDR.sv|
+Z26 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/MAR_MDR.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
@@ -190,6 +270,7 @@ R14
 n@m@a@r_@unit
 vMDR_Unit
 R1
+<<<<<<< HEAD
 R18
 !i10b 1
 !s100 JomAeES@>6LB9Xc=ll9Pf0
@@ -201,14 +282,33 @@ R0
 R5
 R20
 R21
+=======
+R19
+!i10b 1
+!s100 2Oj3WR^^0`34NVZ8jY;h:3
+Icf^g[ONceaQj:JNVmTi??2
+R3
+R20
+S1
+R0
+R21
+R22
+R23
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 L0 17
 R8
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R22
 R23
 R24
+=======
+R24
+R25
+R26
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
@@ -224,17 +324,29 @@ R3
 !s105 Mem2IO_sv_unit
 S1
 R0
+<<<<<<< HEAD
 R16
 8D:/GitProject/ECE385/lab/lab6/code/Mem2IO.sv
 FD:/GitProject/ECE385/lab/lab6/code/Mem2IO.sv
 Z25 L0 16
+=======
+R15
+8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/Mem2IO.sv
+FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/Mem2IO.sv
+Z27 L0 16
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 R8
 r1
 !s85 0
 31
 R9
+<<<<<<< HEAD
 !s107 D:/GitProject/ECE385/lab/lab6/code/Mem2IO.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/Mem2IO.sv|
+=======
+!s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/Mem2IO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/Mem2IO.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
@@ -242,8 +354,13 @@ R14
 n@mem2@i@o
 Xmemory_contents_sv_unit
 R1
+<<<<<<< HEAD
 Z26 DXx4 work 6 SLC3_2 0 22 1ST4Uh_Me;2Klzk9>nlbJ1
 VDo><Yk0cL38hVmOUd9PG@0
+=======
+Z28 DXx4 work 6 SLC3_2 0 22 52IQ9>HZ3B4zK9M1QP9G81
+V08XlFH7R0A`<godX7UZRd0
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 r1
 !s85 0
 31
@@ -253,6 +370,7 @@ IDo><Yk0cL38hVmOUd9PG@0
 !i103 1
 S1
 R0
+<<<<<<< HEAD
 Z27 w1635234715
 Z28 8D:/GitProject/ECE385/lab/lab6/code/memory_contents.sv
 Z29 FD:/GitProject/ECE385/lab/lab6/code/memory_contents.sv
@@ -261,14 +379,29 @@ R8
 R9
 Z30 !s107 D:/GitProject/ECE385/lab/lab6/code/memory_contents.sv|
 Z31 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/memory_contents.sv|
+=======
+R15
+Z29 8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/memory_contents.sv
+Z30 FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/memory_contents.sv
+L0 14
+R8
+R9
+Z31 !s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/memory_contents.sv|
+Z32 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/memory_contents.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
 R14
 vmemory_parser
 R1
+<<<<<<< HEAD
 R26
 DXx4 work 23 memory_contents_sv_unit 0 22 Do><Yk0cL38hVmOUd9PG@0
+=======
+R28
+DXx4 work 23 memory_contents_sv_unit 0 22 08XlFH7R0A`<godX7UZRd0
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 R3
 r1
 !s85 0
@@ -279,6 +412,7 @@ Ifga17DW^Y4kY2KdZIML200
 !s105 memory_contents_sv_unit
 S1
 R0
+<<<<<<< HEAD
 R27
 R28
 R29
@@ -287,6 +421,16 @@ R8
 R9
 R30
 R31
+=======
+R15
+R29
+R30
+R27
+R8
+R9
+R31
+R32
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
@@ -301,17 +445,29 @@ R3
 !s105 PCU_sv_unit
 S1
 R0
+<<<<<<< HEAD
 w1635338946
 8D:/GitProject/ECE385/lab/lab6/code/PCU.sv
 FD:/GitProject/ECE385/lab/lab6/code/PCU.sv
+=======
+R15
+8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/PCU.sv
+FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/PCU.sv
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 L0 1
 R8
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R22
 !s107 D:/GitProject/ECE385/lab/lab6/code/PCU.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/PCU.sv|
+=======
+R9
+!s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/PCU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/PCU.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
@@ -321,16 +477,28 @@ vslc3
 R1
 R2
 !i10b 1
+<<<<<<< HEAD
 !s100 M_F<kGNi4J1WRU3DQ`Ec;3
 I_fDOdeVY2_Df_Y57F`d::0
+=======
+!s100 ::=d3b<G8j2coG<OEm5^l2
+IMBAl?C5^NBPhNe:g1:VE`2
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 R3
 !s105 slc3_sv_unit
 S1
 R0
+<<<<<<< HEAD
 w1635340177
 8D:/GitProject/ECE385/lab/lab6/code/slc3.sv
 FD:/GitProject/ECE385/lab/lab6/code/slc3.sv
 R15
+=======
+w1635388120
+8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/slc3.sv
+FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/slc3.sv
+R16
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 R8
 r1
 !s85 0
@@ -344,24 +512,40 @@ R13
 R14
 XSLC3_2
 R1
+<<<<<<< HEAD
 R18
+=======
+R19
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i10b 1
 !s100 Cz8_^@QRefP31?j=Zf>lj0
 I1ST4Uh_Me;2Klzk9>nlbJ1
 V1ST4Uh_Me;2Klzk9>nlbJ1
 S1
 R0
+<<<<<<< HEAD
 R16
 8D:/GitProject/ECE385/lab/lab6/code/SLC3_2.sv
 FD:/GitProject/ECE385/lab/lab6/code/SLC3_2.sv
+=======
+R15
+8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/SLC3_2.sv
+FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/SLC3_2.sv
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 L0 24
 R8
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R22
 !s107 D:/GitProject/ECE385/lab/lab6/code/SLC3_2.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/SLC3_2.sv|
+=======
+R24
+!s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/SLC3_2.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/SLC3_2.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
@@ -369,7 +553,11 @@ R14
 n@s@l@c3_2
 vtest_memory
 R1
+<<<<<<< HEAD
 R18
+=======
+R19
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i10b 1
 !s100 AZAU7PQT4]][EEHo>57W43
 I52_HGXe>]I9BUFOWAE8L^2
@@ -377,24 +565,36 @@ R3
 !s105 test_memory_sv_unit
 S1
 R0
+<<<<<<< HEAD
 w1635231657
 8D:/GitProject/ECE385/lab/lab6/code/test_memory.sv
 FD:/GitProject/ECE385/lab/lab6/code/test_memory.sv
+=======
+R15
+8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/test_memory.sv
+FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/test_memory.sv
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 L0 22
 R8
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R22
 !s107 D:/GitProject/ECE385/lab/lab6/code/test_memory.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/test_memory.sv|
+=======
+R24
+!s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/test_memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/test_memory.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
 R14
 vtestbench_week1
 R1
-R2
+R17
 !i10b 1
 !s100 TTMD0YYCKM1BeiJbTjUP_2
 IGeW2RGXM9efhPISVOkG7B3
@@ -402,24 +602,41 @@ R3
 !s105 testbench_week1_sv_unit
 S1
 R0
+<<<<<<< HEAD
 R5
 8D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
 FD:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
 R17
+=======
+w1635343063
+8C:/Users/Corvus/Downloads/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
+FC:/Users/Corvus/Downloads/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv
+R18
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 R8
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R9
 !s107 D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/Quartus_env/../lab/lab6/code|D:/GitProject/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv|
+=======
+!s108 1635388179.000000
+!s107 C:/Users/Corvus/Downloads/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/Quartus_env/../lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/Quartus_env/../lab/lab6/code/testbench_week1.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 !s92 -sv -work work +incdir+D:/GitProject/ECE385/Quartus_env/../lab/lab6/code
 R14
 vtristate
 R1
+<<<<<<< HEAD
 R18
+=======
+R19
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i10b 1
 !s100 Akazoo=71mOgoH<gVR_UC0
 I:4=JDEJLPUbk=]cI2V5TJ2
@@ -427,17 +644,30 @@ R3
 !s105 tristate_sv_unit
 S1
 R0
+<<<<<<< HEAD
 R16
 8D:/GitProject/ECE385/lab/lab6/code/tristate.sv
 FD:/GitProject/ECE385/lab/lab6/code/tristate.sv
 R25
+=======
+R15
+8C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/tristate.sv
+FC:/Users/Corvus/Downloads/ECE385/lab/lab6/code/tristate.sv
+R27
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 R8
 r1
 !s85 0
 31
+<<<<<<< HEAD
 R22
 !s107 D:/GitProject/ECE385/lab/lab6/code/tristate.sv|
 !s90 -reportprogress|300|-sv|-work|work|+incdir+D:/GitProject/ECE385/lab/lab6/code|D:/GitProject/ECE385/lab/lab6/code/tristate.sv|
+=======
+R24
+!s107 C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Users/Corvus/Downloads/ECE385/lab/lab6/code|C:/Users/Corvus/Downloads/ECE385/lab/lab6/code/tristate.sv|
+>>>>>>> aa8a74ada620516c9bca9a9a13589afc7378743e
 !i113 1
 R12
 R13
