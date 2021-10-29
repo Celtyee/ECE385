@@ -29,17 +29,53 @@ module datapath (
     output logic [15:0] Data_from_CPU,
     output logic [15:0] MAR,
 
-    // Instruction register
+    // Outputs to controller
     output logic [15:0] IR,
+    output logic BEN,
+    // For demonstration
     output logic [15:0] PC
     
 );    
 
     logic [15:0] GatePC_result, GateMARMUX_result, GateALU_result, GateMDR_result, pc_add_1_result;
+    logic [15:0] Data_from_IR_reg, SR1_out, SR2_out, Data_to_PC;
     logic [15:0] dataBus_output;
+    logic [15:0] SEXT_IR4;
 
     assign PC = GatePC_result;
-    
+    assign IR = Data_from_IR_reg;
+    SEXTU #(.INPUT_WIDTH(5)) SEXTU3(.input_IR(Data_from_IR_reg),.SEXT_IR(SEXT_IR4));
+
+    // IR adder unit
+    IRA IRA0(.ADDR1MUX,.Clk,.Reset_ah,
+            .IR(Data_from_IR_reg),
+            .Data_from_SR1(SR1_out),.Data_from_PC(GatePC_result),
+            .ADDR2MUX,
+            .Data_to_GateMARMUX(GateMARMUX_result),.Data_to_PC);
+
+
+    // BEN_unit
+    BEN_Unit BENU0(.Clk, .Reset(Reset_ah),
+                    .LD_BEN, .LD_CC,
+                    .IR_11_9(Data_from_IR_reg[11:9]),
+                    .Data_from_Bus(dataBus_output),
+                    .BEN_Out(BEN));
+
+    // ALU
+    ALU ALU0(.Clk, .Reset_ah,
+            .SR1_out,.SR2_out,.SEXT_result(SEXT_IR4),
+            .ALUK,
+            .SR2MUX);
+
+
+    REG_FILE RF0(.Clk, .Reset(Reset_ah),
+                .DR(DRMUX), .SR1(SR1MUX), .LD_REG,
+                .Data_from_Bus(dataBus_output),
+                .IR_11_9(IR[11:9]), .IR_8_6(IR[8:6]), .SR2(IR[2:0]),
+                .SR1_out, .SR2_out);
+
+
+    // ======================================== finish for week 1 ========================================
     MAR_Unit MAR_reg(
         .Clk, .Reset(Reset_ah), 
         .LD_MAR, 
@@ -54,19 +90,19 @@ module datapath (
     
     PCU PC_reg(
         .Clk, .Reset_ah, 
-        .adder_output(),
+        .adder_output(Data_to_PC),
         .pc_add_1(pc_add_1_result),
-        .dataBus_input(dataBus_output),
+        .Data_from_dataBus(dataBus_output),
         .PCMUX,
         .LD_PC,
-        .PC_result(GatePC_result),
+        .Current_PC_value(GatePC_result),
         .pc_add_1_result(pc_add_1_result)
     );
     
     IR  IR_reg(
         .Clk, .Reset_ah, .LD_IR,
-        .dataBus_output(dataBus_output),
-        .IR
+        .Data_from_dataBus(dataBus_output),
+        .IR(Data_from_IR_reg)
     );
 
     // dataBus instance
@@ -81,33 +117,8 @@ module datapath (
         .GateMARMUX(GateMARMUX_result),
         .GateMDR(GateMDR_result),
         .GateALU(GateALU_result),
-        .dataBus_output(dataBus_output)
+        .Data_to_dataBus(dataBus_output)
     );
     
 endmodule
 
-
-module Data_BUS (
-    input logic Clk,
-                GatePC_sig,
-                GateMDR_sig,
-                GateALU_sig,
-                GateMARMUX_sig,
-    input logic[15:0] GateMARMUX, GatePC, GateMDR, GateALU,
-    
-    output logic[15:0] dataBus_output
-);
-    logic[3:0] selector_sig;
-	 assign selector_sig = {GatePC_sig, GateMDR_sig, GateALU_sig,GateMARMUX_sig};
-
-    always_comb begin : dataBus_out
-        unique case(selector_sig)
-            4'b0001: dataBus_output = GateMARMUX;
-            4'b0010: dataBus_output = GateALU;
-            4'b0100: dataBus_output = GateMDR;
-            4'b1000: dataBus_output = GatePC;
-            default: dataBus_output = 16'h0000;
-        endcase
-    end
-
-endmodule

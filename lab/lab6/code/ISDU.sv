@@ -14,7 +14,8 @@
 //    Revised 02-13-2017
 //    Spring 2017 Distribution
 //------------------------------------------------------------------------------
-
+`include "SLC3_2.sv"
+import SLC3_2::*;
 
 module ISDU (   input logic         Clk, 
 									Reset,
@@ -55,7 +56,7 @@ module ISDU (   input logic         Clk,
 									Mem_WE
 				);
 
-	enum logic [3:0] {  Halted, 
+	enum logic [4:0] {  Halted, 
 						PauseIR1, 
 						PauseIR2, 
 						S_18, 
@@ -63,8 +64,31 @@ module ISDU (   input logic         Clk,
 						S_33_2, 
 						S_35, 
 						S_32, 
-						S_01}   State, Next_state;   // Internal state logic
-		
+						// BR
+						S_00,
+						S_22,
+						// ADD
+						S_01,
+						S_05,
+						// NOT
+						S_09,
+						// LDR
+						S_06,
+						S_25_1,
+						S_25_2,
+						S_27,
+						// STR
+						S_07,
+						S_23,
+						S_16_1,
+						S_16_2,
+						// JMP
+						S_12,
+						// JSR
+						S_04,
+						S_21
+						}   State, Next_state;   // Internal state logic
+
 	always_ff @ (posedge Clk)
 	begin
 		if (Reset) 
@@ -119,9 +143,92 @@ module ISDU (   input logic         Clk,
 			S_33_2 : 
 				Next_state = S_35;
 			S_35 : 
-				Next_state = PauseIR1;
+				Next_state = S_32;
 			// PauseIR1 and PauseIR2 are only for Week 1 such that TAs can see 
 			// the values in IR.
+			// PauseIR1 : 
+			// 	if (~Continue) 
+			// 		Next_state = PauseIR1;
+			// 	else 
+			// 		Next_state = PauseIR2;
+			// PauseIR2 : 
+			// 	if (Continue) 
+			// 		Next_state = PauseIR2;
+			// 	else 
+			// 		Next_state = S_18;
+			S_32 : 
+				unique case (Opcode)
+					op_ADD : 
+						Next_state = S_01;
+					op_AND : 
+						Next_state = S_05;
+					op_NOT :
+						Next_state = S_09;
+					op_BR  :
+						Next_state = S_00;
+					op_JMP :
+						Next_state = S_12;
+					op_JSR :
+						Next_state = S_04;
+					op_LDR :
+						Next_state = S_06;
+					op_STR :
+						Next_state = S_07;
+					op_PSE :
+						Next_state = PauseIR1;
+					default :  
+						Next_state = S_18;
+				endcase
+			// ADD
+			S_01 : 
+				Next_state = S_18;
+			// AND
+			S_05 :
+				Next_state = S_18;
+			// NOT
+			S_09 :
+				Next_state = S_18;
+
+			// LDR
+			S_06:
+				Next_state = S_25_1;
+			S_25_1:
+				Next_state = S_25_2;
+			S_25_2:
+				Next_state = S_27;
+			S_27:
+				Next_state = S_18;
+
+			// STR
+			S_07:
+				Next_state = S_23;
+			S_23:
+				Next_state = S_16_1;
+			S_16_1:
+				Next_state = S_16_2;
+			S_16_2:
+				Next_state = S_18;
+
+			// JSR
+			S_04:
+				Next_state = S_21;
+			S_21:
+				Next_state = S_18;
+
+			// JMP
+			S_12:
+				Next_state = S_18;
+			
+			// BR
+			S_00:
+				unique case (BEN)
+					1'b0: Next_state = S_18;
+					1'b1: Next_state = S_22; 
+				endcase
+			S_22:
+				Next_state = S_18;	
+			
+			// PSE
 			PauseIR1 : 
 				if (~Continue) 
 					Next_state = PauseIR1;
@@ -132,27 +239,11 @@ module ISDU (   input logic         Clk,
 					Next_state = PauseIR2;
 				else 
 					Next_state = S_18;
-			S_32 : 
-				case (Opcode)
-					4'b0001 : 
-						Next_state = S_01;
-
-					// You need to finish the rest of opcodes.....
-
-					default : 
-						Next_state = S_18;
-				endcase
-			S_01 : 
-				Next_state = S_18;
-
-			// You need to finish the rest of states.....
-
 			default : ;
-
 		endcase
 		
 		// Assign control signals based on current state
-		case (State)
+		unique case (State)
 			Halted: ;
 			S_18 : 
 				begin 
@@ -173,21 +264,141 @@ module ISDU (   input logic         Clk,
 					GateMDR = 1'b1;
 					LD_IR = 1'b1;
 				end
-			PauseIR1: ;
-			PauseIR2: ;
 			S_32 : 
 				LD_BEN = 1'b1;
+
+			// ADD
 			S_01 : 
 				begin 
-					SR2MUX = IR_5;
-					ALUK = 2'b00;
-					GateALU = 1'b1;
 					LD_REG = 1'b1;
-					// incomplete...
+					SR1MUX = 1'b0; // choose IR[8:6]
+					SR2MUX = IR_5; // choose SR2 (0) or imm5 (1)
+					ALUK = 2'b00; // 00 is ADD
+					GateALU = 1'b1;
+					DRMUX = 1'b0; // choose IR[11:9]
+					LD_CC = 1'b1; // set CC
 				end
 
-			// You need to finish the rest of states.....
+			// AND
+			S_05 :
+				begin 
+					LD_REG = 1'b1;
+					SR1MUX = 1'b0; // choose IR[8:6]
+					SR2MUX = IR_5;
+					ALUK = 2'b01; // 01 is AND
+					GateALU = 1'b1;
+					DRMUX = 1'b0; // choose IR[11:9]
+					LD_CC= 1'b1; // set CC
+				end
 
+			// NOT
+			S_09:
+				begin
+					LD_REG = 1'b1;
+					SR1MUX = 1'b0; // choose IR[8:6]
+					ALUK = 2'b10; // 10 is NOT
+					GateALU = 1'b1;
+					DRMUX = 1'b0; // choose IR[11:9]
+					LD_CC = 1'b1; // set CC
+				end
+
+			// LDR
+			S_06:
+				begin
+					ADDR2MUX = 2'b01;
+					ADDR1MUX = 1'b1;
+					SR1MUX = 1'b0;
+					GateMARMUX = 1'b1;
+					LD_MAR = 1'b1;
+				end
+			S_25_1:
+				Mem_OE = 1'b0;
+			S_25_2:
+				begin
+					Mem_OE = 1'b0;
+					LD_MDR = 1'b1;
+				end
+			S_27:
+				begin
+					GateMDR = 1'b1;
+					LD_REG = 1'b1;
+					DRMUX = 1'b0; // IR[11:9]
+					LD_CC = 1'b1; // SetCC
+				end
+			
+			// STR
+			S_07:
+				begin
+					LD_MAR = 1'b1;
+					GateMARMUX = 1'b1;
+					SR1MUX = 1'b0; // choose IR[8:6]
+					ADDR1MUX = 1'b1; // choose SR1_OUT
+					ADDR2MUX = 2'b01; // choose [5:0]SEXT
+				end
+			S_23:
+				begin
+					LD_MDR = 1'b1;
+					ALUK = 2'b11; // 11 is PASSA
+					SR1MUX = 1'b1; // choose IR[11:9]
+					GateALU = 1'b1;
+				end
+			S_16_1:
+				Mem_WE = 1'b0;
+			S_16_2:
+				Mem_WE = 1'b0;
+			
+			// BR
+			S_00: 
+					;
+			S_22:
+				begin
+					LD_PC = 1'b1;
+					ADDR2MUX = 2'b10; // choose [8:0]SEXT
+					ADDR1MUX = 1'b0; // choose output from PC
+					PCMUX = 2'b01; // choose output from adder
+				end
+
+			// JMP
+			S_12:
+				begin
+					LD_PC = 1'b1;
+					SR1MUX = 1'b0; // choose IR[8:6]
+					ALUK = 2'b11; // 11 is PASSA
+					GateALU = 1'b1;
+					PCMUX = 2'b10; // choose value from BUS
+				end
+
+			// JSR
+			S_04:
+				begin
+					LD_REG = 1'b1;
+					GatePC = 1'b1;
+					DRMUX = 1'b1; // select R7
+				end
+			S_21:
+				begin
+					LD_PC = 1'b1;
+					PCMUX = 2'b1; // choose value from BUS
+					case (IR_11)
+						0: 
+							begin
+								SR1MUX = 1'b0; // choose IR[8:6]
+								ALUK = 2'b11; // 11 is PASSA
+								GateALU = 1'b1;
+							end
+						1: 
+							begin
+								ADDR1MUX = 1'b0; // choose output from PC
+								ADDR2MUX = 2'b11; // select SEXT[IR[10:0]]
+								GateMARMUX = 1'b1;
+							end
+						default: ;
+					endcase
+				end
+
+			// PSE
+			PauseIR1: ;
+			PauseIR2: ;
 			default : ;
 		endcase
 	end 

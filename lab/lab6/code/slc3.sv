@@ -107,6 +107,7 @@ datapath d0 (
     .MAR,
 
     .IR(IR),
+    .BEN(BEN),
     .PC(PC)
 );
     
