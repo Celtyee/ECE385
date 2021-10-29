@@ -1,5 +1,5 @@
 module ALU (
-    input logic Clk, Reset_ah,
+    // input logic Clk, Reset_ah,
     input logic [15:0] SR1_out, SR2_out, SEXT_result,
     input logic [1:0] ALUK, 
     input logic SR2MUX,
@@ -7,7 +7,7 @@ module ALU (
     output logic [15:0] GateALU
 );
     logic [15:0] SR2MUX_result, ALU_result;
-    sub_ALU ALU_unit(.Clk(Clk), .Reset_ah(Reset_ah),
+    sub_ALU ALU_unit(
                     .ALUK(ALUK),
                     .SR2MUX_result(SR2MUX_result), .SR1_out(SR1_out),
                     .ALU_result(ALU_result));
@@ -19,10 +19,10 @@ module ALU (
             1'b1 :  SR2MUX_result = SEXT_result; 
         endcase
     end
-    always_ff @( posedge Clk ) begin
-        if(Reset_ah)
-            ALU_result <= 16'b0000;
-    end
+    // always_ff @( posedge Clk ) begin
+    //     if(Reset_ah)
+    //         ALU_result <= 16'b0000;
+    // end
 endmodule
 
 module sub_ALU (

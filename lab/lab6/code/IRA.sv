@@ -13,7 +13,8 @@ endmodule
 
 
 module IRA (
-    input logic ADDR1MUX, Clk, Reset_ah,
+    // input logic Clk, Reset_ah,
+    input logic ADDR1MUX, 
     input logic [15:0] IR, 
                        Data_from_SR1, Data_from_PC,
     input logic [1:0] ADDR2MUX,
@@ -26,13 +27,13 @@ module IRA (
 
     SEXTU#(.INPUT_WIDTH(6)) SEXTU0(.input_IR(IR[5:0]),.SEXT_IR(SEXT_IR5));
     SEXTU#(.INPUT_WIDTH(9)) SEXTU1(.input_IR(IR[8:0]),.SEXT_IR(SEXT_IR8));
-    SEXTU#(.INPUT_WIDTH(11)) SEXTU2(.input_IR(IR[11:0]),.SEXT_IR(SEXT_IR10));
+    SEXTU#(.INPUT_WIDTH(11)) SEXTU2(.input_IR(IR[10:0]),.SEXT_IR(SEXT_IR10));
 
-    always_ff @( posedge Clk) begin 
-        if(Reset_ah)
-            Data_to_GateMARMUX <= 16'b0000;
-            Data_to_PC <= 16'b0000;
-    end
+    // always_ff @( posedge Clk) begin 
+    //     if(Reset_ah)
+    //         Data_to_GateMARMUX <= 16'b0000;
+    //         Data_to_PC <= 16'b0000;
+    // end
 
     always_comb begin
         case(ADDR2MUX)
@@ -46,6 +47,10 @@ module IRA (
             1'b0: adder_right = Data_from_PC;
             1'b1: adder_right = Data_from_SR1;
         endcase
+
+        adder_result = adder_right + adder_left;
+        Data_to_GateMARMUX = adder_result;
+        Data_to_PC = adder_result;
     end
 
 endmodule

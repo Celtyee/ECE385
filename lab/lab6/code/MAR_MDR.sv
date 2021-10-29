@@ -19,7 +19,7 @@ module MDR_Unit(
     input logic Clk,
     input logic Reset, LD_MDR, MIO_EN,
     input logic [15:0] Data_to_CPU, Data_from_Bus,
-    output logic [15:0] Data_from_CPU
+    output logic [15:0] MDR_Out
 );
     logic [15:0] MUX_Out, MDR_Val;
 
@@ -33,5 +33,5 @@ module MDR_Unit(
             endcase
     end
 
-    assign Data_from_CPU = MDR_Val;
+    assign MDR_Out = MDR_Val;
 endmodule

@@ -11,7 +11,7 @@ module PCU #(w = 16) (
 );
     logic [15:0]PC_REG,PC;
 	assign Current_PC_value = PC;
-    assign pc_add_1_result = PC + 1;
+    assign pc_add_1_result = PC + 16'h0001;
     always_ff @( posedge Clk ) begin : PC_register
         if(Reset_ah)
             PC <= 16'b 0000000000000000;
@@ -24,6 +24,7 @@ module PCU #(w = 16) (
             2'b00: PC_REG = pc_add_1;
             2'b01: PC_REG = adder_output;
             2'b10: PC_REG = Data_from_dataBus;
+			default: PC_REG = pc_add_1;
         endcase
     end
     

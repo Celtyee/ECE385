@@ -44,35 +44,45 @@ module datapath (
 
     assign PC = GatePC_result;
     assign IR = Data_from_IR_reg;
-    SEXTU #(.INPUT_WIDTH(5)) SEXTU3(.input_IR(Data_from_IR_reg),.SEXT_IR(SEXT_IR4));
+    SEXTU #(.INPUT_WIDTH(5)) SEXTU3(.input_IR(Data_from_IR_reg[4:0]),.SEXT_IR(SEXT_IR4));
 
     // IR adder unit
-    IRA IRA0(.ADDR1MUX,.Clk,.Reset_ah,
-            .IR(Data_from_IR_reg),
-            .Data_from_SR1(SR1_out),.Data_from_PC(GatePC_result),
-            .ADDR2MUX,
-            .Data_to_GateMARMUX(GateMARMUX_result),.Data_to_PC);
+    IRA IRA0(
+        // .Clk,.Reset_ah,
+        .ADDR1MUX,
+        .IR(Data_from_IR_reg),
+        .Data_from_SR1(SR1_out),.Data_from_PC(GatePC_result),
+        .ADDR2MUX,
+        .Data_to_GateMARMUX(GateMARMUX_result),.Data_to_PC
+    );
 
 
     // BEN_unit
-    BEN_Unit BENU0(.Clk, .Reset(Reset_ah),
-                    .LD_BEN, .LD_CC,
-                    .IR_11_9(Data_from_IR_reg[11:9]),
-                    .Data_from_Bus(dataBus_output),
-                    .BEN_Out(BEN));
+    BEN_Unit BENU0(
+        .Clk, .Reset(Reset_ah),
+        .LD_BEN, .LD_CC,
+        .IR_11_9(Data_from_IR_reg[11:9]),
+        .Data_from_Bus(dataBus_output),
+        .BEN_Out(BEN)
+    );
 
     // ALU
-    ALU ALU0(.Clk, .Reset_ah,
-            .SR1_out,.SR2_out,.SEXT_result(SEXT_IR4),
-            .ALUK,
-            .SR2MUX);
+    ALU ALU0(
+        // .Clk, .Reset_ah,
+        .SR1_out,.SR2_out,.SEXT_result(SEXT_IR4),
+        .ALUK,
+        .SR2MUX,
+        .GateALU(GateALU_result)
+    );
 
 
-    REG_FILE RF0(.Clk, .Reset(Reset_ah),
-                .DR(DRMUX), .SR1(SR1MUX), .LD_REG,
-                .Data_from_Bus(dataBus_output),
-                .IR_11_9(IR[11:9]), .IR_8_6(IR[8:6]), .SR2(IR[2:0]),
-                .SR1_out, .SR2_out);
+    REG_FILE RF0(
+        .Clk, .Reset(Reset_ah),
+        .DR(DRMUX), .SR1(SR1MUX), .LD_REG,
+        .Data_from_Bus(dataBus_output),
+        .IR_11_9(IR[11:9]), .IR_8_6(IR[8:6]), .SR2(IR[2:0]),
+        .SR1_Out(SR1_out), .SR2_Out(SR2_out)
+    );
 
 
     // ======================================== finish for week 1 ========================================
@@ -85,8 +95,10 @@ module datapath (
     MDR_Unit MDR_reg(
         .Clk, .Reset(Reset_ah), 
         .LD_MDR, .MIO_EN, 
-        .Data_to_CPU, .Data_from_Bus(dataBus_output), .Data_from_CPU(GateMDR_result)
+        .Data_to_CPU, .Data_from_Bus(dataBus_output), .MDR_Out(GateMDR_result)
     );
+    
+    assign Data_from_CPU = GateMDR_result; // Feed MDR output to MEM2IO
     
     PCU PC_reg(
         .Clk, .Reset_ah, 

@@ -45,7 +45,7 @@ timeprecision 1ns;
 	#1
 	PC = test.my_slc.d0.GatePC_result;
 	MAR = test.my_slc.d0.MAR_reg.ADDR_Out;
-	MDR = test.my_slc.d0.MDR_reg.Data_from_CPU;
+	MDR = test.my_slc.d0.MDR_reg.MDR_Out;
 	IR = test.my_slc.d0.IR_reg.IR;	
 	end
 	
