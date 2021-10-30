@@ -5,7 +5,7 @@ module IR (
 );
     always_ff @( posedge Clk ) begin
         if(Reset_ah)
-            IR <= 16'b0000;
+            IR <= 16'h0000;
         if(LD_IR)
             IR <= Data_from_dataBus;
     end
@@ -37,7 +37,7 @@ module IRA (
 
     always_comb begin
         case(ADDR2MUX)
-            2'b00: adder_left = 16'b0000;
+            2'b00: adder_left = 16'h0000;
             2'b01: adder_left = SEXT_IR5;
             2'b10: adder_left = SEXT_IR8;
             2'b11: adder_left = SEXT_IR10;

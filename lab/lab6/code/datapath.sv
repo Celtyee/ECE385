@@ -78,9 +78,9 @@ module datapath (
 
     REG_FILE RF0(
         .Clk, .Reset(Reset_ah),
-        .DR(DRMUX), .SR1(SR1MUX), .LD_REG,
+        .DRMUX(DRMUX), .SR1MUX(SR1MUX), .LD_REG, .SR2(IR[2:0]),
         .Data_from_Bus(dataBus_output),
-        .IR_11_9(IR[11:9]), .IR_8_6(IR[8:6]), .SR2(IR[2:0]),
+        .IR_11_9(IR[11:9]), .IR_8_6(IR[8:6]),
         .SR1_Out(SR1_out), .SR2_Out(SR2_out)
     );
 
