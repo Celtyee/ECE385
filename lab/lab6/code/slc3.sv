@@ -27,11 +27,14 @@ module slc3(
 );
 
 // Declaration of push button active high signals
-logic Reset_ah, Continue_ah, Run_ah;
+// logic Reset_ah, Continue_ah, Run_ah;
 
-assign Reset_ah = ~Reset;
-assign Continue_ah = ~Continue;
-assign Run_ah = ~Run;
+// assign Reset_ah = ~Reset;
+// assign Continue_ah = ~Continue;
+// assign Run_ah = ~Run;
+
+logic Reset_SH, Continue_SH, Run_SH;
+sync button_sync[2:0] (Clk, {~Reset, ~Run, ~Continue}, {Reset_SH, Run_SH, Continue_SH});
 
 // Internal connections
 logic BEN;
@@ -79,7 +82,7 @@ assign LED = IR[11:0]; // PAUSE operation
 // Be careful about whether Reset is active high or low
 datapath d0 (
     .Clk,
-    .Reset_ah,
+    .Reset_ah(Reset_SH),
 
     .LD_MAR,
     .LD_MDR,
@@ -115,7 +118,7 @@ datapath d0 (
     
 // Our SRAM and I/O controller
 Mem2IO memory_subsystem(
-    .*, .Reset(Reset_ah), .ADDR(ADDR), .Switches(S),
+    .*, .Reset(Reset_SH), .ADDR(ADDR), .Switches(S),
     .HEX0(hex_4[0][3:0]), .HEX1(hex_4[1][3:0]), .HEX2(hex_4[2][3:0]), .HEX3(hex_4[3][3:0]),
     .Data_from_CPU(MDR), .Data_to_CPU(MDR_In),
     .Data_from_SRAM(Data_from_SRAM), .Data_to_SRAM(Data_to_SRAM)
@@ -128,7 +131,7 @@ tristate #(.N(16)) tr0(
 
 // State machine and control signals
 ISDU state_controller(
-    .*, .Reset(Reset_ah), .Run(Run_ah), .Continue(Continue_ah),
+    .*, .Reset(Reset_SH), .Run(Run_SH), .Continue(Continue_SH),
     .Opcode(IR[15:12]), .IR_5(IR[5]), .IR_11(IR[11]),
     .Mem_CE(CE), .Mem_UB(UB), .Mem_LB(LB), .Mem_OE(OE), .Mem_WE(WE)
 );
