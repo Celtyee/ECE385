@@ -17,10 +17,10 @@
 `include "SLC3_2.sv"
 import SLC3_2::*;
 
-module ISDU (   input logic         Clk, 
-									Reset,
-									Run,
-									Continue,
+	module ISDU (   input logic         Clk, 
+										Reset,
+										Run,
+										Continue,
 									
 				input logic[3:0]    Opcode, 
 				input logic         IR_5,
