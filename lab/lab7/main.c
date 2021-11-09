@@ -10,11 +10,16 @@ int main()
 	volatile unsigned int *KEY_2 = (unsigned int*) // RESET
 	volatile unsigned int *KEY_3 = (unsigned int*)  // accumulate
 	int accumulator = 0;
+	
 	while(true){
 		if(*KEY_2 == 0)
 			accumulator = 0;
 		else if(*KEY_3 == 0)
+		{
 			accumulator += *SW_IN;
+			if(accumulator > 255)
+				accumulator -= 256;
+		}
 		else
 			accumulator |= 0xFF; //keep the value
 	}	
